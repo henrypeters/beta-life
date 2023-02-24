@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection</title>
+    <link rel="stylesheet" href="collection.css">
+</head>
+<body>
+    <header>
+     <div class="navbar">
+        <div class="logo">
+            <h1>betaLife</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </nav>
+    </div>   
+    </header><hr>
+      
+    <!-- <div id="big-image-info"  class="sticky">
+        <img src="" id="large-image" class="large-image">
+        <div class="pic-info">
+        </div>
+    </div> -->
+
+    <section>
+        <img src="" id="large-image" class="large-image">
+        <div id="pic-info"></div>
+    </section>
+
+    <div class="list-of-foods">
+        <p>Select meals</p>
+        
+        <div class="align-lists">
+            <h5>Pasta</h5>
+            <hr class="underline">
+            <div class="group1">
+                <div class="one">
+                    <img src="images/pasta/spaghetti.jpg" onclick="setLargeImage(1)">
+                    <p class="food-name">Spaghetti</p>
+                </div>
+                <div class="two">
+                     <img src="images/pasta/fusilli.webp" onclick="setLargeImage(2)"> 
+                     <p class="food-name">Fusilli</p>  
+                </div>
+                <div class="three">
+                    <img src="images/pasta/ruote.jpg" onclick="setLargeImage(3)">  
+                    <p class="food-name">Ruote</p>   
+                </div>
+                <div class="four">
+                    <img src="images/pasta/macaroni.jpg" onclick="setLargeImage(4)">  
+                    <p class="food-name">Macaroni</p>   
+                </div>
+                <div class="five">
+                    <img src="images/pasta/rigate.jpg" onclick="setLargeImage(5)">   
+                    <p class="food-name">Rigate</p>  
+                </div>
+                <div class="six">
+                    <img src="images/pasta/Pappardelle.jpg" onclick="setLargeImage(6)">
+                    <p class="food-name">Pappardelle</p>  
+                </div>
+            </div>
+
+            <div class="group2">
+                <div class="one">
+                    <img src="images/pasta/orzo.jpg" onclick="setLargeImage(7)">
+                    <p class="food-name">Orzo</p>
+                </div>
+                <div class="two">
+                     <img src="images/pasta/Indomie.jpg" onclick="setLargeImage(8)"> 
+                     <p class="food-name">Indomie</p>  
+                </div>
+                <div class="three">
+                    <img src="images/pasta/tagliatelle.jpg" onclick="setLargeImage(9)">  
+                    <p class="food-name">Tagliatelle</p>   
+                </div>
+                <div class="four">
+                    <img src="images/pasta/radiatore.jpg" onclick="setLargeImage(10)">  
+                    <p class="food-name">Radiatore</p>   
+                </div>
+                <div class="five">
+                    <img src="images/pasta/gnocchi.jpg" onclick="setLargeImage(11)">   
+                    <p class="food-name">Gnoochi</p>  
+                </div>
+                <div class="six">
+                    <img src="images/pasta/penne1.jpg" onclick="setLargeImage(12)">
+                    <p class="food-name">Penne</p>  
+                </div>
+            </div>
+
+            <!-- <div class="group3">
+                <div class="one">
+                    <img src="images/rush-pack.jpg">
+                    <p class="food-name">Rice</p>
+                </div>
+                <div class="two">
+                     <img src="images/rush-foods-pack.jpg"> 
+                     <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="three">
+                    <img src="images/download.jfif">  
+                    <p class="food-name">Macronni</p>   
+                </div>
+                <div class="four">
+                    <img src="images/new w download (1).jfif">  
+                    <p class="food-name">Noodles</p>   
+                </div>
+                <div class="five">
+                    <img src="images/rush-pack.jpg">   
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="six">
+                    <img src="images/rush-foods-pack.jpg">
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+            </div> -->
+        </div>
+
+        <div class="align-lists">
+            <h5>Local Foods</h5>
+            <hr class="underline2">
+            <div class="group1">
+                <div class="one">
+                    <img src="images/local-foods/Jollof_Rice.jpg" onclick="setLargeImage(13)">
+                    <p class="food-name">Jollof Rice</p>
+                </div>
+                <div class="two">
+                     <img src="images/local-foods/Yam-Porridge.jpg" onclick="setLargeImage(14)"> 
+                     <p class="food-name">Asaro</p>  
+                </div>
+                <div class="three">
+                    <img src="images/local-foods/iyan(pounded_yam).JPG" onclick="setLargeImage(15)">  
+                    <p class="food-name">Iyan</p>   
+                </div>
+                <div class="four">
+                    <img src="images/local-foods/pepper_soup.jpg" onclick="setLargeImage(16)">  
+                    <p class="food-name">Nsala</p>   
+                </div>
+                <div class="five">
+                    <img src="images/local-foods/boli(roasted_plantain).jpg" onclick="setLargeImage(17)">   
+                    <p class="food-name">Boli</p>  
+                </div>
+                <div class="six">
+                    <img src="images/local-foods/ukpo_oka.jpg" onclick="setLargeImage(18)">
+                    <p class="food-name">Ukpo Oka</p>  
+                </div>
+            </div>
+
+            <div class="group2">
+                <div class="one">
+                    <img src="images/local-foods/amala.jpg" onclick="setLargeImage(19)">
+                    <p class="food-name">Amala</p>
+                </div>
+                <div class="two">
+                     <img src="images/local-foods/fried-plantain.jpeg" onclick="setLargeImage(20)"> 
+                     <p class="food-name">Plantain</p>  
+                </div>
+                <div class="three">
+                    <img src="images/local-foods/egusi.jpg" onclick="setLargeImage(21)">  
+                    <p class="food-name">Egusi</p>   
+                </div>
+                <div class="four">
+                    <img src="images/local-foods/ogbonno.jpg" onclick="setLargeImage(22)">  
+                    <p class="food-name">Ogbono</p>   
+                </div>
+                <div class="five">
+                    <img src="images/local-foods/efo-riro.jpg" onclick="setLargeImage(23)">   
+                    <p class="food-name">Efo riro</p>  
+                </div>
+                <div class="six">
+                    <img src="images/local-foods/abacha.jpg" onclick="setLargeImage(24)">
+                    <p class="food-name">Abacha</p>  
+                </div>
+            </div>
+
+            <!-- <div class="group3">
+                <div class="one">
+                    <img src="images/rush-pack.jpg">
+                    <p class="food-name">Rice</p>
+                </div>
+                <div class="two">
+                     <img src="images/rush-foods-pack.jpg"> 
+                     <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="three">
+                    <img src="images/download.jfif">  
+                    <p class="food-name">Macronni</p>   
+                </div>
+                <div class="four">
+                    <img src="images/new w download (1).jfif">  
+                    <p class="food-name">Noodles</p>   
+                </div>
+                <div class="five">
+                    <img src="images/rush-pack.jpg">   
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="six">
+                    <img src="images/rush-foods-pack.jpg">
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+            </div> -->
+        </div>
+
+        <div class="align-lists">
+            <h5>Drinks</h5>
+            <hr class="underline3">
+            <div class="group1">
+                <div class="one">
+                    <img src="images/rush-pack.jpg" onclick="setLargeImage(25)">
+                    <p class="food-name">Rice</p>
+                </div>
+                <div class="two">
+                     <img src="images/rush-foods-pack.jpg" onclick="setLargeImage(26)"> 
+                     <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="three">
+                    <img src="images/download.jfif" onclick="setLargeImage(27)">  
+                    <p class="food-name">Macronni</p>   
+                </div>
+                <div class="four">
+                    <img src="images/new w download (1).jfif" onclick="setLargeImage(28)">  
+                    <p class="food-name">Noodles</p>   
+                </div>
+                <div class="five">
+                    <img src="images/rush-pack.jpg" onclick="setLargeImage(29)">   
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="six">
+                    <img src="images/rush-foods-pack.jpg" onclick="setLargeImage(30)">
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+            </div>
+
+            <div class="group2">
+                <div class="one">
+                    <img src="images/rush-pack.jpg" onclick="setLargeImage(31)">
+                    <p class="food-name">Rice</p>
+                </div>
+                <div class="two">
+                     <img src="images/rush-foods-pack.jpg" onclick="setLargeImage(32)"> 
+                     <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="three">
+                    <img src="images/download.jfif" onclick="setLargeImage(33)">  
+                    <p class="food-name">Macronni</p>   
+                </div>
+                <div class="four">
+                    <img src="images/new w download (1).jfif" onclick="setLargeImage(34)">  
+                    <p class="food-name">Noodles</p>   
+                </div>
+                <div class="five">
+                    <img src="images/rush-pack.jpg" onclick="setLargeImage(35)">   
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="six">
+                    <img src="images/rush-foods-pack.jpg" onclick="setLargeImage(36)">
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+            </div>
+
+            <!-- <div class="group3">
+                <div class="one">
+                    <img src="images/rush-pack.jpg">
+                    <p class="food-name">Rice</p>
+                </div>
+                <div class="two">
+                     <img src="images/rush-foods-pack.jpg"> 
+                     <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="three">
+                    <img src="images/download.jfif">  
+                    <p class="food-name">Macronni</p>   
+                </div>
+                <div class="four">
+                    <img src="images/new w download (1).jfif">  
+                    <p class="food-name">Noodles</p>   
+                </div>
+                <div class="five">
+                    <img src="images/rush-pack.jpg">   
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="six">
+                    <img src="images/rush-foods-pack.jpg">
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+            </div> -->
+        </div> <!-- align-lists -->
+
+        <div class="align-lists">
+            <h5>Snacks</h5>
+            <hr class="underline4">
+            <div class="group1">
+                <div class="one">
+                    <img src="images/rush-pack.jpg" onclick="setLargeImage(37)">
+                    <p class="food-name">Rice</p>
+                </div>
+                <div class="two">
+                     <img src="images/rush-foods-pack.jpg" onclick="setLargeImage(38)"> 
+                     <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="three">
+                    <img src="images/download.jfif" onclick="setLargeImage(39)">  
+                    <p class="food-name">Macronni</p>   
+                </div>
+                <div class="four">
+                    <img src="images/new w download (1).jfif" onclick="setLargeImage(40)">  
+                    <p class="food-name">Noodles</p>   
+                </div>
+                <div class="five">
+                    <img src="images/rush-pack.jpg" onclick="setLargeImage(41)">   
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="six">
+                    <img src="images/rush-foods-pack.jpg" onclick="setLargeImage(42)">
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+            </div>
+
+            <div class="group2">
+                <div class="one">
+                    <img src="images/rush-pack.jpg" onclick="setLargeImage(43)">
+                    <p class="food-name">Rice</p>
+                </div>
+                <div class="two">
+                     <img src="images/rush-foods-pack.jpg" onclick="setLargeImage(44)"> 
+                     <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="three">
+                    <img src="images/download.jfif" onclick="setLargeImage(45)">  
+                    <p class="food-name">Macronni</p>   
+                </div>
+                <div class="four">
+                    <img src="images/new w download (1).jfif" onclick="setLargeImage(46)">  
+                    <p class="food-name">Noodles</p>   
+                </div>
+                <div class="five">
+                    <img src="images/rush-pack.jpg" onclick="setLargeImage(47)">   
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="six">
+                    <img src="images/rush-foods-pack.jpg" onclick="setLargeImage(48)">
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+            </div>
+
+            <!-- <div class="group3">
+                <div class="one">
+                    <img src="images/rush-pack.jpg">
+                    <p class="food-name">Rice</p>
+                </div>
+                <div class="two">
+                     <img src="images/rush-foods-pack.jpg"> 
+                     <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="three">
+                    <img src="images/download.jfif">  
+                    <p class="food-name">Macronni</p>   
+                </div>
+                <div class="four">
+                    <img src="images/new w download (1).jfif">  
+                    <p class="food-name">Noodles</p>   
+                </div>
+                <div class="five">
+                    <img src="images/rush-pack.jpg">   
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+                <div class="six">
+                    <img src="images/rush-foods-pack.jpg">
+                    <p class="food-name">Spaghetti</p>  
+                </div>
+            </div> -->
+        </div> <!-- align-lists -->
+    </div>
+
+    <script src="collection.js"></script>
+</body>
+</html>

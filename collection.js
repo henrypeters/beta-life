@@ -11,22 +11,9 @@ const arraryOfFoodName = ["", "Spaghetti", "Fusilli", "Rhoute", "Macaroni", "Rig
 "Boli (Roasted Plantain)", "Ukpo Oka (Corn Pudding)", "Amala", "Plantain And Egg", "Egusi", "Ogbono", "Efo Riro", "Abacha",
 "Puff Puff"];
 
-const arrayOfFoodPrice = ["", "<strong>Price:</strong> <i>₦900</i>", "<strong>Price:</strong> ₦1000", "<strong>Price:</strong> ₦850", "<strong>Price:</strong> ₦900",
-"<strong>Price:</strong> ₦750", "<strong>Price:</strong> ₦950", "<strong>Price:</strong> ₦900", "<strong>Price:</strong> ₦950", "<strong>Price:</strong> ₦800",
-"<strong>Price:</strong> 650", "<strong>Price:</strong> ₦550", "<strong>Price:</strong> ₦450", "<strong>Price:</strong> ₦1200", 
-"<strong>Price:</strong> ₦700", "<strong>Price:</strong> ₦850", "<strong>Price:</strong> ₦900", "<strong>Price:</strong> ₦800",
-"<strong>Price:</strong> ₦850", "<strong>Price:</strong> ₦650", "<strong>Price:</strong> ₦900", "<strong>Price:</strong> ₦1300",
-"<strong>Price:</strong> ₦1000", "<strong>Price:</strong> ₦1000", "<strong>Price:</strong> ₦800",];
+const arrayOfURL = ["", "pasta/spaghetti/spaghetti.html", "pasta/fusilli.html", "pasta/rhuote.html"]
 
-const arrayOfFoodDeliveryPrice = ["", "<strong>delivery:</strong> <i>₦900</i>", "<strong>delivery:</strong> ₦1000", "<strong>delivery:</strong> ₦850", "<strong>delivery:</strong> ₦900",
-"<strong>delivery:</strong> ₦750", "<strong>delivery:</strong> ₦950", "<strong>delivery:</strong> ₦900", "<strong>delivery:</strong> ₦950", "<strong>delivery:</strong> ₦800",
-"<strong>delivery:</strong> 650", "<strong>delivery:</strong> ₦550", "<strong>delivery:</strong> ₦450", "<strong>delivery:</strong> ₦1200", 
-"<strong>delivery:</strong> ₦700", "<strong>delivery:</strong> ₦850", "<strong>delivery:</strong> ₦900", "<strong>delivery:</strong> ₦800",
-"<strong>delivery:</strong> ₦850", "<strong>delivery:</strong> ₦650", "<strong>delivery:</strong> ₦900", "<strong>delivery:</strong> ₦1300",
-"<strong>delivery:</strong> ₦1000", "<strong>delivery:</strong> ₦1000", "<strong>delivery:</strong> ₦800",];
-
-const foodPrice = document.getElementById("price");
-const foodDeliveryPrice = document.getElementById("delivery")
+const linkPictureHolder = document.getElementById("anchor")
 const largePictureHolder = document.getElementById("large-image");
 const foodName = document.getElementById("name");
 
@@ -34,9 +21,8 @@ largePictureHolder.src = arrayOfPictures[0];
 
 function setLargeImage(index) {
     largePictureHolder.src = arrayOfPictures[index];
+    linkPictureHolder.href = arrayOfURL[index];
     foodName.innerHTML = arraryOfFoodName[index];
-    foodPrice.innerHTML = arrayOfFoodPrice[index];
-    foodDeliveryPrice.innerHTML = arrayOfFoodDeliveryPrice[index]
 }
 
 

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collection</title>
+    <title>Spaghetti</title>
     <link rel="stylesheet" href="sphagetti.css">
 </head>
-<body>
+<body id="whole">
     <header>
      <div class="navbar">
         <div class="logo">
@@ -29,9 +29,74 @@
     </section>
 
     <div class="text">
-        <h1>Spaghetti</h1>
-        <p class="price"></p>
+        <h1 id="title">Spaghetti</h1>
+        <p id="price">Price: ₦900.00</p>
+        <p id="delivery">Delivery: ₦1,000.00</p><hr class="price-line">
+
+        <div class="plates">
+             <strong id="plate-title">Plates:</strong> <input type="text" placeholder="number of plates" id="plate-input">
+        </div><hr class="plate-line">
+
+
+
+        <!------------------------------------------------IMPORTANT ---------------------------------------->
+        <!------------------------------------------------IMPORTANT ---------------------------------------->
+
+        <!-- <input type="time"> -->
+
+        <!------------------------------------------------IMPORTANT ---------------------------------------->
+        <!------------------------------------------------IMPORTANT ---------------------------------------->
+
+
+        <div class="time">
+            <h2 id="time-heading">Time to be delivered</h2>
+
+            <!-- <select id="time-list" name="time">
+                <option disabled selected value="0">-- Choose an option --</option>
+                <option>1:00 am</option>
+                <option>2:00 am</option>
+                <option>3:00 am</option>
+                <option>4:00 am</option>
+                <option>5:00 am</option>
+                <option>6:00 am</option>
+                <option>7:00 am</option>
+                <option>8:00 am</option>
+                <option>9:00 am</option>
+                <option>10:00 am</option>
+                <option>11:00 am</option>
+                <option>12:00 pm</option>
+                <option>1:00 pm</option>
+                <option>2:00 pm</option>
+                <option>3:00 pm</option>
+                <option>4:00 pm</option>
+                <option>5:00 pm</option>
+                <option>6:00 pm</option>
+                <option>7:00 pm</option>
+                <option>8:00 pm</option>
+                <option>9:00 pm</option>
+                <option>10:00 pm</option>
+                <option>11:00 pm</option>
+                <option>12:00 am</option>
+            </select> -->
+            <input type="time" id="time-input">
+        </div> 
+
+        <div class="order-button">
+            <button id="btn">Order Now</button>
+        </div>
     </div>
+    
+    <div id="message">
+        <!-- <div class="card">
+            <button class="agree">Got it</button>
+        </div> -->
+
+    </div>
+
+    <div id="correctPlate"></div>
+    <div id="designPlate"></div>
+    <div id="designNotifyTime"></div>
+    <div id="showTime"></div>
 
     <script src="spaghetti.js"></script>
 </body>

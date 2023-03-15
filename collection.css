@@ -54,8 +54,8 @@ hr{
 /* body */
 section{
     position: fixed;
-    margin-left: 8%;
-    margin-top: 20px;
+    margin-left: 5%;
+    margin-top: 40px;
     margin-right: 10%;
 }
 
@@ -97,7 +97,7 @@ i{
 /* list */
 .list-of-foods{
     margin-top: 50px;
-    margin-left: 700px;
+    margin-left: 750px;
 }
 
 .list-of-foods p{

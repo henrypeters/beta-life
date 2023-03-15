@@ -11,7 +11,8 @@ const arraryOfFoodName = ["", "Spaghetti", "Fusilli", "Rhoute", "Macaroni", "Rig
 "Boli (Roasted Plantain)", "Ukpo Oka (Corn Pudding)", "Amala", "Plantain And Egg", "Egusi", "Ogbono", "Efo Riro", "Abacha",
 "Puff Puff"];
 
-const arrayOfURL = ["", "pasta/spaghetti/spaghetti.html", "pasta/fusilli.html", "pasta/rhuote.html"]
+const arrayOfURL = ["", "pasta/spaghetti/spaghetti.html", "pasta/fusilli/fusilli.html", "pasta/rhoute/rhuote.html",
+"pasta/macaroni/macaroni.html", "pasta/rigate/rigate.html", "pasta/pappardelle/pappardelle.html"]
 
 const linkPictureHolder = document.getElementById("anchor")
 const largePictureHolder = document.getElementById("large-image");

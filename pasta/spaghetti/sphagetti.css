@@ -55,7 +55,7 @@ hr{
 #message .card{
     background-color: white;
     padding: 15px;
-    width: 380px;
+    width: 400px;
     height: auto;
     margin-top: -34.5%;
     margin-left: 60%;
@@ -127,7 +127,7 @@ hr{
     margin-top: 12px;
 }
 
-.agree{
+.continue{
     margin-top: 170px;
     color: white;
     font-size: 15px;
@@ -136,7 +136,109 @@ hr{
     outline: none;
     border: none;
     text-align: center;
-    background-color: rgb(206, 135, 2);
+    background-color: rgb(236, 162, 23);
+    border-radius: 2px;
+}
+
+#location .card-locate{
+    background-color: white; 
+    padding: 20px;
+    width: 570px;
+    height: auto;
+    margin-top: -34%;
+    margin-left: 50%;
+    border-radius: 5px;
+    box-shadow: 1px 22px 77px #777373ad;
+}
+
+.location-title{
+    color: #333333c5;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.state-input{
+    padding: 8px;
+    width: 70%;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    /* border-color: #7c7b7b33; */
+    border-bottom: 1px solid rgba(54, 53, 53, 0.322);
+    border-top: 1px solid rgba(54, 53, 53, 0.322);
+    border-left: 1px solid rgba(54, 53, 53, 0.322);
+    border-right: 1px solid rgba(54, 53, 53, 0.322);
+    border-radius: 10px;
+    outline: none;
+}
+
+
+.town-input{
+    padding: 8px;
+    width: 70%;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    /* border-color: #7c7b7b33; */
+    border-bottom: 1px solid rgba(54, 53, 53, 0.322);
+    border-top: 1px solid rgba(54, 53, 53, 0.322);
+    border-left: 1px solid rgba(54, 53, 53, 0.322);
+    border-right: 1px solid rgba(54, 53, 53, 0.322);
+    border-radius: 10px;
+    outline: none;
+}
+
+.home-input{
+    padding: 8px;
+    width: 70%;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    /* border-color: #7c7b7b33; */
+    border-bottom: 1px solid rgba(54, 53, 53, 0.322);
+    border-top: 1px solid rgba(54, 53, 53, 0.322);
+    border-left: 1px solid rgba(54, 53, 53, 0.322);
+    border-right: 1px solid rgba(54, 53, 53, 0.322);
+    border-radius: 10px;
+    outline: none;  
+    margin-bottom: 20px;
+}
+
+#state{
+    color: #333333c5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#town{
+    color: #333333c5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#home-address{
+    color: #333333c5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.agree{
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: rgb(236, 162, 23);
     border-radius: 2px;
 }
 

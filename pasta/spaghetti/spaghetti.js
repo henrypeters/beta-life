@@ -42,14 +42,14 @@ const fixedName = document.getElementById("name");
 const introPlate = document.getElementById("plate-title");
 const introTime = document.getElementById("time-heading");
 
-let greet = `Dear Customer, you've just ordered`;
-let plate = ` plate of spaghetti <hr class="notify-line">`;
-let notifyTime = `It would be delivered at`;
-
 function setCard() {
     const message = document.querySelector("#message");
     const notification = document.createElement("div");
     notification.classList.add("card");
+
+    let greet = `Dear Customer, you've just ordered`;
+    let plate = ` plate of spaghetti <hr class="notify-line">`;
+    let notifyTime = `It would be delivered at`;
 
     const actions  = document.createElement("div")
     const removeButton = document.createElement("button");
@@ -57,10 +57,10 @@ function setCard() {
 
     actions.classList.add("actions");
     removeButton.classList.add("remove");
-    moreInfo.classList.add("agree");
+    moreInfo.classList.add("continue");
 
     removeButton.innerHTML = `<img src="../../images/socials/delete.png">`;
-    moreInfo.innerHTML = `<h4> Got It </h4>`
+    moreInfo.innerHTML = `<h4> Continue </h4>`
     
     designGreet.innerHTML = `<h3 class="greet"> ${greet} </h3>`;
     designPlate.innerHTML = `<h2> ${input1.value += plate} </h2>`;
@@ -110,13 +110,6 @@ function setCard() {
     moreInfo.addEventListener("click", infoFunc);
 }
 
-function infoFunc() {
-    const notification = this.parentNode.parentNode;
-    const parent = notification.parentNode;
-
-    parent.removeChild(notification);
-}
-
 function removeFunc() {
     const notification = this.parentNode.parentNode;
     const parent = notification.parentNode;
@@ -156,6 +149,104 @@ function removeFunc() {
     delivey.style.color = "rgb(100, 55, 19)"
     // 
     button.style.marginTop = "19px"
+}
+
+function infoFunc() {
+    const notification = this.parentNode.parentNode;
+    const parent = notification.parentNode;
+    parent.removeChild(notification);
+    
+    const locationMessage = document.querySelector("#location");
+    const locationCard = document.createElement("div")
+    locationCard.classList.add("card-locate");
+    const confirm = document.createElement("div");
+    confirm.classList.add("agree");
+    
+    confirm.innerHTML = `<h3> Got it </h3>`;
+
+    let title = `Your location ...`;
+    const designTitle = document.getElementById("locationTitle")
+    designTitle.innerHTML = `<h3 class="location-title"> ${title} </h3>`;
+    
+    const designState = document.getElementById("state");
+    let state = `State`;
+    designState.innerHTML = `<p id="state"> ${state} </p>`;
+
+    const designTown = document.getElementById("town");
+    let town = `Town`;
+    designTown.innerHTML = `<p id="Town"> ${town} </p>`;
+
+    const designHome = document.getElementById("home-address");
+    let home = `Home Address`;
+    designHome.innerHTML = `<p id="Town"> ${home} </p>`;
+    
+    const designStateInput = document.getElementById("stateInput");
+    let yourStateInput = `<input type="text" class="state-input">`
+    designStateInput.innerHTML = `<div> ${yourStateInput} </div> `;
+
+    const designTownInput = document.getElementById("townInput");
+    let yourTownInput = `<input type="text" class="town-input">`;
+    designTownInput.innerHTML = `<div> ${yourTownInput} </div> `;
+
+    const designHomeInput = document.getElementById("home-addressInput");
+    let yourHomeInput = `<input type="text" class="home-input">`;
+    designHomeInput.innerHTML = `<div> ${yourHomeInput} </div> `;
+
+    locationCard.appendChild(designTitle);
+    locationCard.appendChild(designState);
+    locationCard.appendChild(designStateInput);
+    locationCard.appendChild(designTown)
+    locationCard.appendChild(designTownInput);
+    locationCard.appendChild(designHome);
+    locationCard.appendChild(designHomeInput);
+    locationCard.appendChild(confirm);
+    locationMessage.appendChild(locationCard);
+
+    confirm.addEventListener("click", conditionForConfirm);
+}
+
+function conditionForConfirm() {
+}
+
+function confirmFunction() {
+    const notification = this.parentNode.parentNode;
+    const parent = notification.parentNode;
+    parent.removeChild(notification);
+
+    button.style.backgroundImage = "linear-gradient(to top, #bd7408, #f1ae1c)";
+    button.style.opacity = "1"
+
+    introPlate.style.display = "block"
+    introPlate.style.color = "black";
+    // 
+    introTime.style.display = "block"
+    introTime.style.color = "black";
+    // 
+    fixedName.style.color = "black"
+    // 
+    input1.style.display = "block"
+    input1.style.marginTop = "-29px"
+    input1.style.marginLeft = "93px"
+    input1.style.opacity = "1";
+    // 
+    input2.style.display = "block"
+    input2.style.opacity = "1";
+    // 
+    fixedImage.style.opacity = "1";
+    // 
+    body.style.backgroundColor = "#fff"
+    // 
+    foodName.style.display = "block"
+    foodName.style.color = "black"
+    // 
+    price.style.display = "block"
+    price.style.color = "rgb(100, 55, 19)"
+    // 
+    delivey.style.display = "block"
+    delivey.style.color = "rgb(100, 55, 19)"
+    // 
+    button.style.marginTop = "19px"
+    
 }
 
 function setConditionForCard() {

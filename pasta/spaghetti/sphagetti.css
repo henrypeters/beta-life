@@ -141,7 +141,10 @@ hr{
 }
 
 #location .card-locate{
-    background-color: white; 
+    background-color: rgb(172, 168, 168); 
+    background-image: linear-gradient(to bottom, #f1f1f163, #ffffffb0), url("images/map2.jpg");
+    background-position: center;
+    background-size: 400px;
     padding: 20px;
     width: 570px;
     height: auto;
@@ -229,8 +232,9 @@ hr{
     letter-spacing: 1px;
 }
 
-.agree{
-    margin-top: 10px;
+.agree button{
+    margin-top: 30px;
+    width: 520px;
     color: white;
     font-size: 15px;
     cursor: pointer;

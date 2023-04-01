@@ -42,6 +42,13 @@ const fixedName = document.getElementById("name");
 const introPlate = document.getElementById("plate-title");
 const introTime = document.getElementById("time-heading");
 
+const locationInputs = [
+    {
+        locateState: "Kaduna",
+        locateTown: "Barnawa"
+    }
+];
+
 function setCard() {
     const message = document.querySelector("#message");
     const notification = document.createElement("div");
@@ -82,17 +89,6 @@ function setCard() {
     
     input1.value = "";
     input2.value = "";
-    
-    // introPlate.style.color = "#47474771";
-    // introTime.style.color = "#47474771";
-    // fixedName.style.color = "#47474771"
-    // input1.style.opacity = "0.2";
-    // input2.style.opacity = "0.2";
-    // fixedImage.style.opacity = "0.5";
-    // body.style.backgroundColor = "#adadad";
-    // foodName.style.color = "white";
-    // price.style.color = "white";
-    // delivey.style.color = "white";
 
     introPlate.style.display = "none";
     introTime.style.display = "none";
@@ -157,12 +153,13 @@ function infoFunc() {
     parent.removeChild(notification);
     
     const locationMessage = document.querySelector("#location");
+    const locationForm = document.querySelector("form");
     const locationCard = document.createElement("div")
     locationCard.classList.add("card-locate");
     const confirm = document.createElement("div");
     confirm.classList.add("agree");
     
-    confirm.innerHTML = `<h3> Got it </h3>`;
+    confirm.innerHTML = `<h3> <button type="submit">Got It</button> </h3>`;
 
     let title = `Your location ...`;
     const designTitle = document.getElementById("locationTitle")
@@ -175,37 +172,31 @@ function infoFunc() {
     const designTown = document.getElementById("town");
     let town = `Town`;
     designTown.innerHTML = `<p id="Town"> ${town} </p>`;
-
-    const designHome = document.getElementById("home-address");
-    let home = `Home Address`;
-    designHome.innerHTML = `<p id="Town"> ${home} </p>`;
     
     const designStateInput = document.getElementById("stateInput");
-    let yourStateInput = `<input type="text" class="state-input">`
-    designStateInput.innerHTML = `<div> ${yourStateInput} </div> `;
+    let yourStateInput = `type="text"`
+    designStateInput.innerHTML = `<input ${yourStateInput} class="state-input" required>`
 
+    
     const designTownInput = document.getElementById("townInput");
-    let yourTownInput = `<input type="text" class="town-input">`;
-    designTownInput.innerHTML = `<div> ${yourTownInput} </div> `;
-
-    const designHomeInput = document.getElementById("home-addressInput");
-    let yourHomeInput = `<input type="text" class="home-input">`;
-    designHomeInput.innerHTML = `<div> ${yourHomeInput} </div> `;
+    let yourTownInput = `type="text"`
+    designTownInput.innerHTML = `<input ${yourTownInput} class="state-input" required>`
 
     locationCard.appendChild(designTitle);
     locationCard.appendChild(designState);
     locationCard.appendChild(designStateInput);
     locationCard.appendChild(designTown)
     locationCard.appendChild(designTownInput);
-    locationCard.appendChild(designHome);
-    locationCard.appendChild(designHomeInput);
     locationCard.appendChild(confirm);
-    locationMessage.appendChild(locationCard);
+    locationForm.appendChild(locationCard)
+    locationMessage.appendChild(locationForm);
 
     confirm.addEventListener("click", conditionForConfirm);
 }
 
+
 function conditionForConfirm() {
+    
 }
 
 function confirmFunction() {

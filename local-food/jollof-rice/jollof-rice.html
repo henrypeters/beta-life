@@ -7,7 +7,7 @@
     <title>Spaghetti</title>
     <link rel="stylesheet" href="jollof-rice.css">
 </head>
-<body>
+<body id="whole">
     <header>
      <div class="navbar">
         <div class="logo">
@@ -24,7 +24,7 @@
     </header><hr>
 
     <section>
-        <img src="images/spaghetti.jpg" id="large-image" class="large-image">
+        <img src="../../images/local-foods/Jollof_Rice.jpg" id="large-image" class="large-image">
         <p id="name">Jollof Rice</p>
     </section>
 
@@ -34,51 +34,11 @@
         <p id="delivery">Delivery: ₦1,000.00</p><hr class="price-line">
 
         <div class="plates">
-             <strong>Plates:</strong> <input type="text" placeholder="number of plates" id="plate-input">
-             <!-- <p id="num-plate"></p> -->
+             <strong id="plate-title">Plates:</strong> <input type="text" placeholder="number of plates" id="plate-input">
         </div><hr class="plate-line">
 
-
-
-        <!------------------------------------------------IMPORTANT ---------------------------------------->
-        <!------------------------------------------------IMPORTANT ---------------------------------------->
-
-        <!-- <input type="time"> -->
-
-        <!------------------------------------------------IMPORTANT ---------------------------------------->
-        <!------------------------------------------------IMPORTANT ---------------------------------------->
-
-
         <div class="time">
-            <h2>Time to be delivered</h2>
-
-            <!-- <select id="time-list" name="time">
-                <option disabled selected value="0">-- Choose an option --</option>
-                <option>1:00 am</option>
-                <option>2:00 am</option>
-                <option>3:00 am</option>
-                <option>4:00 am</option>
-                <option>5:00 am</option>
-                <option>6:00 am</option>
-                <option>7:00 am</option>
-                <option>8:00 am</option>
-                <option>9:00 am</option>
-                <option>10:00 am</option>
-                <option>11:00 am</option>
-                <option>12:00 pm</option>
-                <option>1:00 pm</option>
-                <option>2:00 pm</option>
-                <option>3:00 pm</option>
-                <option>4:00 pm</option>
-                <option>5:00 pm</option>
-                <option>6:00 pm</option>
-                <option>7:00 pm</option>
-                <option>8:00 pm</option>
-                <option>9:00 pm</option>
-                <option>10:00 pm</option>
-                <option>11:00 pm</option>
-                <option>12:00 am</option>
-            </select> -->
+            <h2 id="time-heading">Time to be delivered</h2>
             <input type="time" id="time-input">
         </div> 
 
@@ -88,17 +48,35 @@
     </div>
     
     <div id="message">
-        <!-- <div class="card">
-            <div class="actions">
-                <button class="remove"><img src="../../images/socials/delete.png" ></button>
-            </div>
-        </div> -->
     </div>
-    
+
+    <div id="location">
+        <!-- <div class="card-locate">
+            <div id="state">State</div>
+            <input type="text" id="state-input">
+
+            <p id="town">Town</p>
+            <input type="text" id="town-input">
+
+            <p id="home-address">Home Address</p>
+            <input type="text" id="home-input">
+        </div> -->
+        <form></form>
+    </div>
+
     <div id="correctPlate"></div>
     <div id="designPlate"></div>
     <div id="designNotifyTime"></div>
     <div id="showTime"></div>
+
+    <div id="locationTitle"></div>
+    <div id="state"></div>
+    <div id="town"></div>
+    <div id="home-address"></div>
+
+    <div id="stateInput"></div>
+    <div id="townInput"></div>
+    <div id="home-addressInput"></div>
 
     <script src="jollof-rice.js"></script>
 </body>

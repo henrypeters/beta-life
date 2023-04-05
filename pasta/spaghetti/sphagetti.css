@@ -142,7 +142,7 @@ hr{
 
 #location .card-locate{
     background-color: rgb(172, 168, 168); 
-    background-image: linear-gradient(to bottom, #f1f1f163, #ffffffb0), url("images/map2.jpg");
+    background-image: linear-gradient(to bottom, #f1f1f163, #ffffffb0), url("../../images/socials/map2.jpg");
     background-position: center;
     background-size: 400px;
     padding: 20px;
@@ -164,10 +164,9 @@ hr{
 .state-input{
     padding: 8px;
     width: 70%;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 200;
     text-align: center;
-    /* border-color: #7c7b7b33; */
     border-bottom: 1px solid rgba(54, 53, 53, 0.322);
     border-top: 1px solid rgba(54, 53, 53, 0.322);
     border-left: 1px solid rgba(54, 53, 53, 0.322);
@@ -180,7 +179,7 @@ hr{
 .town-input{
     padding: 8px;
     width: 70%;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 200;
     text-align: center;
     /* border-color: #7c7b7b33; */

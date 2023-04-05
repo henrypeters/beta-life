@@ -20,7 +20,7 @@ function setCard() {
     notification.classList.add("card");
 
     let greet = `Dear Customer, you've just ordered`;
-    let plate = ` plate of pappardelle <hr class="notify-line">`;
+    let plate = ` plate of penne <hr class="notify-line">`;
     let notifyTime = `It would be delivered at`;
 
     const actions  = document.createElement("div")

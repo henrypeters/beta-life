@@ -56,9 +56,10 @@ hr{
     background-color: white;
     padding: 15px;
     width: 400px;
-    height: 200px;
-    margin-top: -40%;
+    height: auto;
+    margin-top: -34.5%;
     margin-left: 60%;
+    box-shadow: 1px 22px 77px #777373ad;
 }
 
 .card .actions {
@@ -98,12 +99,12 @@ hr{
 .greet{
     padding-top: 8px;
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: 2px;
 }
 
 #correctPlate h2{
-    font-weight: 200;
+    font-weight: 500;
     font-size: 19px;
     margin-top: 10px;
 }
@@ -114,16 +115,134 @@ hr{
 }
 
 .designTime{
-    font-weight: 200;
+    font-weight: 400;
     font-size: 14px;
     margin-top: 20px;
     letter-spacing: 2px;
 }
 
 #showTime h2{
-    font-weight: 200;
+    font-weight: 500;
     font-size: 19px;
     margin-top: 12px;
+}
+
+.continue{
+    margin-top: 170px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: rgb(236, 162, 23);
+    border-radius: 2px;
+}
+
+#location .card-locate{
+    background-color: rgb(172, 168, 168); 
+    background-image: linear-gradient(to bottom, #f1f1f163, #ffffffb0), url("../../images/socials/map2.jpg");
+    background-position: center;
+    background-size: 400px;
+    padding: 20px;
+    width: 570px;
+    height: auto;
+    margin-top: -34%;
+    margin-left: 50%;
+    border-radius: 5px;
+    box-shadow: 1px 22px 77px #777373ad;
+}
+
+.location-title{
+    color: #333333c5;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.state-input{
+    padding: 8px;
+    width: 70%;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+    border-bottom: 1px solid rgba(54, 53, 53, 0.322);
+    border-top: 1px solid rgba(54, 53, 53, 0.322);
+    border-left: 1px solid rgba(54, 53, 53, 0.322);
+    border-right: 1px solid rgba(54, 53, 53, 0.322);
+    border-radius: 10px;
+    outline: none;
+}
+
+
+.town-input{
+    padding: 8px;
+    width: 70%;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+    /* border-color: #7c7b7b33; */
+    border-bottom: 1px solid rgba(54, 53, 53, 0.322);
+    border-top: 1px solid rgba(54, 53, 53, 0.322);
+    border-left: 1px solid rgba(54, 53, 53, 0.322);
+    border-right: 1px solid rgba(54, 53, 53, 0.322);
+    border-radius: 10px;
+    outline: none;
+}
+
+.home-input{
+    padding: 8px;
+    width: 70%;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    /* border-color: #7c7b7b33; */
+    border-bottom: 1px solid rgba(54, 53, 53, 0.322);
+    border-top: 1px solid rgba(54, 53, 53, 0.322);
+    border-left: 1px solid rgba(54, 53, 53, 0.322);
+    border-right: 1px solid rgba(54, 53, 53, 0.322);
+    border-radius: 10px;
+    outline: none;  
+    margin-bottom: 20px;
+}
+
+#state{
+    color: #333333c5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#town{
+    color: #333333c5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#home-address{
+    color: #333333c5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.agree button{
+    margin-top: 30px;
+    width: 520px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: rgb(236, 162, 23);
+    border-radius: 2px;
 }
 
 /* body */

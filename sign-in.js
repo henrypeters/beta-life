@@ -10,7 +10,7 @@ function eventAfterFirstBtnClick() {
         const secondButton = document.createElement("div");
         secondButton.classList.add("secondBtn");
 
-        secondButton.innerHTML = `<a href="collection.html"><button> Get Started </button></a>`;
+        secondButton.innerHTML = `<a href="collection.html"><button> Welcome </button></a>`;
 
         formContainer.appendChild(secondButton);
     }else{

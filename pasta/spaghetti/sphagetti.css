@@ -66,7 +66,7 @@ hr{
     display: flex;
     align-items: center;
     margin-left: 94.2%;
-    margin-top: -285px;
+    margin-top: -295px;
     margin-bottom: 100px;
 }
 
@@ -171,8 +171,8 @@ hr{
 }
 
 .recheck-active button{
-    margin-top: 175px;
-    margin-left: 1px;
+    margin-top: 170px;
+    margin-left: 2px;
     padding: 10px 28px;
     width: 540px;
     color: white;
@@ -352,14 +352,14 @@ hr{
 
 .rating-btn{
     margin-top: 140px;
-    margin-left: 100px;
+    margin-left: 90px;
     background: transparent;
     border: none;
 }
 
 .rating-btn img{
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     cursor: pointer;
     display: block;
     transition: 0.5s;

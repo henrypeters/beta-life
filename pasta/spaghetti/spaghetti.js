@@ -29,6 +29,15 @@ const fixedName = document.getElementById("name");
 const introPlate = document.getElementById("plate-title");
 const introTime = document.getElementById("time-heading");
 
+const moreInfo = document.createElement("div");
+moreInfo.classList.add("continue");
+moreInfo.innerHTML = `<h4> <button> Continue </button> </h4>`;
+
+const recheck = document.createElement("div")
+recheck.classList.add("recheck");
+recheck.innerHTML = `<a href="spaghetti.html"><button> Recheck my order </button></a>`;
+
+
 function setCard() {
     const message = document.querySelector("#message");
     const notification = document.createElement("div");
@@ -45,18 +54,17 @@ function setCard() {
     const actions  = document.createElement("div");
     const btnHolder = document.createElement("div");
     const removeButton = document.createElement("button");
-    const moreInfo = document.createElement("div");
-    const recheck = document.createElement("div")
+
 
     actions.classList.add("actions");
     btnHolder.classList.add("button-holder")
     removeButton.classList.add("remove");
-    moreInfo.classList.add("continue");
-    recheck.classList.add("recheck")
+    
+
 
     removeButton.innerHTML = `<img src="../../images/socials/delete.png">`;
-    moreInfo.innerHTML = `<h4> <button> Continue </button> </h4>`;
-    recheck.innerHTML = `<h4> <button>Recheck my order</button> </h4>`;
+    
+    
     
     designGreet.innerHTML = `<h3 class="greet"> ${greet} </h3>`;
     designPlate.innerHTML = `<h2> ${logicForNumPlate += plate} </h2>`;
@@ -110,6 +118,9 @@ function functionForPayment(value) {
     if(input1.value > 0) {
         return value*450+600;;
     }else{ 
+        moreInfo.style.display = "none";
+        recheck.classList.toggle("recheck-active");
+
         return 0;
     }
 }
@@ -198,7 +209,6 @@ function requestFunction() {
                                     <p> Unhappy </p>
                                 </button>`;
 
-    
     cardForRequest.appendChild(designRequestTitle);
     ratingsContainer.appendChild(happyButton);
     ratingsContainer.appendChild(neutralButton);
@@ -209,33 +219,12 @@ function requestFunction() {
     fixedImage.style.display= "none";
     fixedName.style.display = "none"
 
-    happyButton.addEventListener("click", function() {
-        cardForRequest.appendChild(happyReviewButton);
-        happyReviewButton.addEventListener("click", happyMessageReply);
-    })
+    happyButton.addEventListener("click", happyMessageReply)
 
-    neutralButton.addEventListener("click", function() {
-        cardForRequest.appendChild(neutralReviewButton);
-        neutralReviewButton.addEventListener("click", neutralMessageReply);
-    })
+    neutralButton.addEventListener("click", neutralMessageReply)
 
-    unhappyButton.addEventListener("click", function() {
-        cardForRequest.appendChild(unhappyReviewButton);
-        unhappyReviewButton.addEventListener("click", unhappyMassageReply);
-    });
+    unhappyButton.addEventListener("click", unhappyMassageReply);
 }
-
-const happyReviewButton = document.createElement("button");
-happyReviewButton.classList.add("happyRevButton");
-happyReviewButton.innerHTML = `<h4> Send Review </h4>`;
-
-const unhappyReviewButton = document.createElement("button");
-unhappyReviewButton.classList.add("unhappyRevButton");
-unhappyReviewButton.innerHTML = `<h4> Send Review </h4>`;
-
-const neutralReviewButton = document.createElement("button");
-neutralReviewButton.classList.add("neutralRevButton");
-neutralReviewButton.innerHTML = `<h4> Send Review </h4>`
 
 function happyMessageReply() {
     const notification = this.parentNode.parentNode;

@@ -110,7 +110,7 @@ function functionForNumberOfPlate() {
 
 function functionForPayment(value) {
     if(input1.value > 0) {
-        return value*450+600;;
+        return value*350+500;;
     }else{ 
         moreInfo.style.display = "none";
         recheck.classList.toggle("recheck-active");

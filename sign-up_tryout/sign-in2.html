@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign-in2.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <!-- <div class="container">
+        <h2>Sign In</h2>
+        <section class="firstName">
+            <p>First Name</p>
+            <input type="text" id="firstName">
+        </section>
+
+        <section class="secondName">
+            <p>Second Name</p>
+            <input type="text" id="secondName">
+        </section>
+    </div> -->
+
+
+    <div id="form-container">
+        <div id="form-inner-container">
+          <!-- Sign up form -->
+          <div id="sign-up-container">
+            <h3>Get Started</h3>
+            <form>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="Name">
+    
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email">
+    
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+    
+              <div id="form-controls">
+                <button type="submit">Sign Up</button>
+                <button type="button" id="toggleSignIn">Sign In</button>
+              </div>
+    
+              <input type="checkbox" name="terms" id="terms">
+              <label for="terms">I agree to the <a href="#" class="termsLink">Terms of service</a> and <a href="#" class="termsLink">Privacy Policy</a>.</label>
+            </form>
+          </div>
+    
+          <!-- Sign in form -->
+          <div id="sign-in-container" class="hide">
+            <h3>Welcome Back</h3>
+            <form>
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username" placeholder="user@example.com">
+    
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+    
+              <div id="form-controls">
+                <button type="submit">Sign In</button>
+                <button type="button" id="toggleSignUp">Sign Up</button>
+              </div>
+    
+              <input type="checkbox" name="terms" id="terms">
+              <label for="terms">I agree to the <a href="#" class="termsLink">Terms of service</a> and <a href="#" class="termsLink">Privacy Policy</a>.</label>
+            </form>
+          </div>
+    
+    <script src="sign-in2.js"></script>
+</body>
+</html>
+
+

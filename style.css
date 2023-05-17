@@ -78,11 +78,10 @@ nav ul li a{
     color: #fff;
     font-weight: 200;
     font-size: 20px;
-    font-family:'Courier New', Courier, monospace; 
+    letter-spacing: 1px;
 }
 
 .logo h1{
-    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     color: #fff;
     cursor: pointer;
     margin-left: 40%;
@@ -253,6 +252,7 @@ nav ul li a{
 }
 
 .btn{
+    cursor: pointer;
     display: inline-block;
     color: #fff;
     background: orange;
@@ -267,6 +267,137 @@ nav ul li a{
 
 .btn:hover{
     transform: scale(1.1);
+}
+
+#contactMessage .contactCard{
+    background-color: rgb(255, 255, 255);
+    padding: 11px;
+    width: 40%;
+    /* height: 350px; */
+    height: auto;
+    margin-top: -190%;
+    margin-left: 32%;
+    border-radius: 20px;
+    box-shadow: 1px 22px 77px #777373ad;
+}
+
+.contactTitle{
+    text-align: center;
+    max-width: 200;
+    margin-top: 12px;
+    font-size: 45px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    /* width: 230px; */
+}
+
+.contactTitle::before{
+    content: '';
+    background: #773d06;
+    height: 1.4px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(67px);
+}
+
+.contactTitle::after{
+    content: '';
+    background: #773d06;
+    height: 5px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(8px);
+}
+
+.contactCard .actions {
+    margin-left: 92%;
+    margin-top: -70px;
+    margin-bottom: 70px;
+}
+
+.contactCard .actions button {
+    display: block;
+    padding: 0.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contactCard .actions button img{
+    width: 22px;
+    height: 22px;
+}
+
+.contactCard .actions .remove{
+    padding: 9px 10px;
+    margin-right: 0.5rem;
+    opacity: 0.5;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.contactCard .actions .remove:hover{
+    opacity: 0.2;
+}
+
+.contactPlatformHolder{
+    margin-left: 50px;
+}
+
+.locationHolder{
+    display: flex;
+    margin-top: 30px;
+}
+
+.locationHolder img{
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.locationHolder p{
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+.phoneHolder{
+    display: flex;
+    margin-top: 15px;
+}
+
+.phoneHolder img{
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.phoneHolder p{
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+.internetHolder{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.internetHolder img{
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.internetHolder p{
+    margin-top: 15px;
+    margin-left: 60px;
 }
 
 /* clients */

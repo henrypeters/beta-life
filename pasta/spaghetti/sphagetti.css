@@ -1,0 +1,842 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&family=Nunito:wght@200&family=Open+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* navbar */
+.logo{
+    margin-top:20px;
+    margin-left: 90px;
+    cursor: pointer;
+}
+
+.cart{
+    width: 25px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    margin-top: -20px;
+    padding-left: 1070px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 0.541);
+    transition: 0.2s;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+hr{
+    margin-left: 4%;
+    width: 90%;
+    margin-top: 30px;
+    border: 1px solid rgba(51, 51, 51, 0.123);
+}
+
+#message .card{
+    background-color: white;
+    padding: 18px;
+    width: 580px;
+    height: auto;
+    margin-top: -6.6%;
+    margin-left: 55%;
+    box-shadow: 1px 22px 77px #777373ad;
+}
+
+.card .actions {
+    display: flex;
+    align-items: center;
+    margin-left: 94.2%;
+    margin-top: -295px;
+    margin-bottom: 100px;
+}
+
+.card .actions button {
+    display: block;
+    padding: 0.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card .actions button img{
+    width: 20px;
+    height: 20px;
+}
+
+.card .actions .remove{
+    padding: 9px 10px;
+    margin-right: 0.5rem;
+    opacity: 0.5;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.card .actions .remove:hover{
+    opacity: 0.8;
+}
+
+.greet{
+    padding-top: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+#correctPlate h2{
+    font-weight: 500;
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.notify-line{
+    border: 1px solid #3333334b;
+    margin-bottom: 25px;
+}
+
+.designTime{
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+#showTime h2{
+    font-weight: 500;
+    font-size: 19px;
+    margin-top: 12px;
+}
+
+.intro-amount{
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.payConfirmation{
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.continue button{
+    margin-top: 170px;
+    margin-bottom: -70px;
+    width: 260px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 29px;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: rgb(236, 162, 23);
+    border-radius: 2px;
+}
+
+.recheck button{
+    margin-top: 170px;
+    margin-left: 5px;
+    padding: 10px 28px;
+    width: 275px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: rgb(236, 162, 23);
+    border-radius: 2px;
+}
+
+.recheck-active button{
+    margin-top: 170px;
+    margin-left: 2px;
+    padding: 10px 28px;
+    width: 540px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: rgb(236, 162, 23);
+    border-radius: 2px;
+}
+
+.button-holder{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#paymentPlatform .paymentCard{
+    background-color: white;
+    padding: 22px;
+    width: 580px;
+    /* height: 470px; */
+    height: auto;
+    margin-top: -6.6%;
+    margin-left: 55%;
+    box-shadow: 1px 22px 77px #777373ad;
+}
+
+#titlePaymentPlatform{
+    color: #464646;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#introToPaymentPlatforms{
+    color: #7a7a7a;
+    font-weight: 500;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+#bigPhoto{
+    cursor: pointer;
+    width: 270px;
+    margin-left: 110px;
+    margin-top: 30px;
+}
+
+#smallPhoto{
+    cursor: pointer;
+    width: 90px;
+    height: 50px;
+    border-radius: 100px;
+    margin-left: 18px;
+    transition: 0.5s;
+}
+
+#smallPhoto:hover{
+    transform: translateY(-5px);
+}
+
+#smallPhotowave{
+    cursor: pointer;
+    width: 90px;
+    height: 50px;
+    border-radius: 100px;
+    margin-left: 18px;
+    transition: 0.5s;
+}
+
+#smallPhotowave:hover{
+    transform: translateY(-5px);
+}
+
+#smallPhotoM{
+    cursor: pointer;
+    width: 90px;
+    height: 60px;
+    padding: 1px;
+    border-radius: 100px;
+    margin-top: -5px;
+    margin-right: -20px;
+    transition: 0.5s;
+}
+
+#smallPhotoM:hover{
+    transform: translateY(-5px);
+}
+
+#smallPhotopigy{
+    cursor: pointer;
+    width: 110px;
+    height: 60px;
+    border-radius: 100px;
+    margin-top: -5px;
+    margin-right: -3px;
+    transition: 0.5s;
+}
+
+#smallPhotopigy:hover{
+    transform: translateY(-5px);
+}
+
+.smallPicHolder{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.smallPicHoldermonie{
+    display: flex;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+.buttonForComfirmPayment{
+    margin-top: 50px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: rgb(236, 162, 23);
+    border-radius: 2px;
+}
+
+/* FeedBack */
+#requestPlatform .requestCard{
+    background-color: white;
+    padding: 22px;
+    width: 90%;
+    height: 540px;
+    margin-top: -7%;
+    margin-left: 6%;
+    border-radius: 20px;
+    box-shadow: 1px 22px 77px #777373ad;
+}
+
+.titleForRquest{
+    text-align: center;
+    max-width: 200;
+    margin-top: 12px;
+    font-size: 25px;
+    font-weight: 400;
+    /* color: #994f0a; */
+}
+
+.titleForRquest::before{
+    content: '';
+    background: #773d06;
+    height: 1.4px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+
+.titleForRquest::after{
+    content: '';
+    background: #773d06;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(29px);
+}
+
+#rating-container{
+    margin-left: 290px;
+    display: flex;
+}
+
+.rating-btn{
+    margin-top: 140px;
+    margin-left: 90px;
+    background: transparent;
+    border: none;
+}
+
+.rating-btn img{
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    display: block;
+    transition: 0.5s;
+}
+
+.rating-btn img:hover{
+    transform: translateY(-4px);
+}
+
+.unhappyRevButton{
+    cursor: pointer;
+    padding: 12px 40px;
+    width: 1000px;
+    margin-top: 120px;
+    margin-left: 100px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(236, 162, 23);
+    transition: 0.5s;
+}
+
+.unhappyRevButton:hover{
+    transform: translateY(-3px);
+}
+
+#unhappyReply .unhappyReplyCard{
+    background-color: white;
+    padding: 22px;
+    width: 90%;
+    height: 540px;
+    margin-top: -7%;
+    margin-left: 6%;
+    border-radius: 20px;
+    box-shadow: 1px 22px 77px #777373ad;
+}
+
+.titleForUnhappy::before{
+    content: '';
+    background: #773d06;
+    height: 1.4px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(53px);
+}
+
+.titleForUnhappy::after{
+    content: '';
+    background: #773d06;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(19px);
+}
+
+.titleForUnhappy{
+    text-align: center;
+    max-width: 200;
+    margin-top: 12px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.greetForUnhappy{
+    margin-top: 90px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+}
+
+.trackProblem{
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px; 
+}
+
+.findOutChallenge{
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: 1px; 
+    text-transform: uppercase;
+}
+
+.challengeOpt1{
+    color: #c08504;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 325px;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.challengeOpt1:hover{
+    color: #925b07;
+    letter-spacing: 3px;
+}
+
+.challengeOpt2{
+    color: #af7a06;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 325px;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.challengeOpt2:hover{
+    color: #925b07;
+    letter-spacing: 3px;
+}
+
+.apology{
+    margin-top: 150px;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.improvement{
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.acceptReplyBtn button{
+    cursor: pointer;
+    padding: 10px 40px;
+    width: 1000px;
+    margin-top: 120px;
+    margin-left: 100px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(236, 162, 23);
+    transition: 0.5s;
+}
+
+.acceptReplyBtn button a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.happyRevButton{
+    cursor: pointer;
+    padding: 12px 40px;
+    width: 1000px;
+    margin-top: 120px;
+    margin-left: 100px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(236, 162, 23);
+    transition: 0.5s;
+}
+
+.happyRevButton:hover{
+    transform: translateY(-3px);
+}
+
+#happyReply .happyReplyCard{
+    background-color: white;
+    padding: 22px;
+    width: 90%;
+    height: 540px;
+    margin-top: -7%;
+    margin-left: 6%;
+    border-radius: 20px;
+    box-shadow: 1px 22px 77px #777373ad;
+}
+
+.titleForHappy{
+    text-align: center;
+    max-width: 200;
+    margin-top: 12px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.titleForHappy::before{
+    content: '';
+    background: #773d06;
+    height: 1.4px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(53px);
+}
+
+.titleForHappy::after{
+    content: '';
+    background: #773d06;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(19px);
+}
+
+.greetingHappy{
+    margin-top: 120px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+}
+
+.happyResponse{
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px; 
+}
+
+.thanks-reply{
+    text-align: center;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.conclude-reply{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.neutralRevButton{
+    cursor: pointer;
+    padding: 12px 40px;
+    width: 1000px;
+    margin-top: 120px;
+    margin-left: 100px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(236, 162, 23);
+    transition: 0.5s;
+}
+
+#neutralReply .neutralReplyCard{
+    background-color: white;
+    padding: 22px;
+    width: 90%;
+    height: 540px;
+    margin-top: -7%;
+    margin-left: 6%;
+    border-radius: 20px;
+    box-shadow: 1px 22px 77px #777373ad;
+}
+
+.titleForNeutral{
+    text-align: center;
+    max-width: 200;
+    margin-top: 12px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.titleForNeutral::before{
+    content: '';
+    background: #773d06;
+    height: 1.4px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(53px);
+}
+
+.titleForNeutral::after{
+    content: '';
+    background: #773d06;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(20px);
+}
+
+.greetingNeutral{
+    margin-top: 120px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+}
+
+.trackNeutral{
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px; 
+}
+
+.neutralFinalResponse{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+/* body */
+section{
+    position: fixed;
+    margin-left: 5%;
+    margin-top: 70px;
+    margin-right: 10%;
+}
+
+.large-image{
+    width: 480px;
+    height: 340px;
+    margin: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#name{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.name-line{
+    background-color: #33333396;
+    width: 100px;
+    margin-top: 10px;
+}
+
+#price{ 
+    color: rgb(100, 55, 19);
+    margin-top: 30px;
+    margin-left: -50px;
+    font-size: 25px;
+}
+
+#delivery{
+    color: rgb(100, 55, 19);
+    margin-top: 20px;
+    margin-left: -50px;
+    font-size: 25px;
+}
+
+/* list */
+.text{
+    margin-top: 40px;
+    margin-left: 900px;
+}
+
+.text h1{
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.name-line{
+    background-color: #33333396;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.price{
+    color: rgb(100, 55, 19);
+    margin-top: 30px;
+    margin-left: -50px;
+    font-size: 22px;
+}
+
+.delivery{
+    color: rgb(100, 55, 19);
+    margin-top: 15px;
+    margin-left: -50px;
+    font-size: 22px;
+}
+
+.price-line{
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: -45px;
+}
+
+/* plates */
+.plates{
+    margin-top: 20px;
+    margin-left: -50px;
+}
+
+strong{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+#plate-input{
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 10px;
+    padding: 10px 20px;
+    outline: none;
+}
+
+#num-plate{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 140px;
+}
+
+.plate-line{
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: -45px;
+}
+
+/* Time to be delivered */
+.time{
+    margin-top: 20px;
+    margin-left: -50px;
+}
+
+.time h2{
+    font-weight: 500;
+}
+
+#time-input{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    outline: none;
+}
+
+/* Button */
+.order-button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.order-button button{
+    cursor: pointer;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 16px 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 1px 10px 55px #dbc921;
+    background: linear-gradient(to top, #bd7408, #f1ae1c);
+}
+
+.order-button button:hover{
+    background: linear-gradient(to top , #d4840c, #f1ae1c);
+}

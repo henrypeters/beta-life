@@ -26,7 +26,13 @@ const arrayOfURL = ["", "pasta/spaghetti/spaghetti.html", "pasta/fusilli/fusilli
 "pasta/penne/penne.html", "local-food/jollof-rice/jollof-rice.html", "local-food/asaro/asaro.html", "local-food/iyan/iyan.html",
 "local-food/nsala/nsala.html", "local-food/boli/boli.html", "local-food/ukpo-oka/ukpo-oka.html", "local-food/amala/amala.html",
 "local-food/plantain/plantain.html", "local-food/egusi/egusi.html", "local-food/ogbono/ogbono.html", "local-food/efo-riro/efo-riro.html", 
-"local-food/abacha/abacha.html"]
+"local-food/abacha/abacha.html", "snacks/hot-dog/hot-dog.html", "snacks/cookies/cookies.html", "snacks/meat-pie/meat-pie.html",
+"snacks/pizza/pizza.html", "snacks/sandwich/sandwich.html", "snacks/chips/chips.html", "snacks/pop-corn/popcorn.html", 
+"snacks/corn-dog/corndog.html", "snacks/shawarma/shawarma.html", "snacks/waffles/waffles.html", "snacks/burger/burger.html",
+"snacks/donut/donut.html", "drinks/coke/coke.html", "drinks/fanta/fanta.html", "drinks/schweppes/schweppes.html", 
+"drinks/mirinda/mirinda.html", "drinks/sprite/sprite.html", "drinks/chapman/chapman.html", "drinks/pepsi/pepsi.html",
+"drinks/limca/limca.html", "drinks/lacasera/lacasera.html", "drinks/malt/malt.html", "drinks/lucozade/lucozade.html",
+"drinks/5alive/5alive.html"]
 
 const linkPictureHolder = document.getElementById("anchor")
 const largePictureHolder = document.getElementById("large-image");

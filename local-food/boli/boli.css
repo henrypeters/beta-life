@@ -54,19 +54,20 @@ hr{
 
 #message .card{
     background-color: white;
-    padding: 15px;
-    width: 400px;
+    padding: 18px;
+    width: 580px;
     height: auto;
-    margin-top: -34.5%;
-    margin-left: 60%;
+    margin-top: -6.6%;
+    margin-left: 55%;
     box-shadow: 1px 22px 77px #777373ad;
 }
 
 .card .actions {
     display: flex;
     align-items: center;
-    margin-left: 93%;
-    margin-top: -186px;
+    margin-left: 94.2%;
+    margin-top: -295px;
+    margin-bottom: 100px;
 }
 
 .card .actions button {
@@ -111,13 +112,13 @@ hr{
 
 .notify-line{
     border: 1px solid #3333334b;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .designTime{
     font-weight: 400;
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 15px;
     letter-spacing: 2px;
 }
 
@@ -127,12 +128,26 @@ hr{
     margin-top: 12px;
 }
 
-.continue{
+.intro-amount{
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.payConfirmation{
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.continue button{
     margin-top: 170px;
+    margin-bottom: -70px;
+    width: 260px;
     color: white;
     font-size: 15px;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 10px 29px;
     outline: none;
     border: none;
     text-align: center;
@@ -140,100 +155,142 @@ hr{
     border-radius: 2px;
 }
 
-#location .card-locate{
-    background-color: rgb(172, 168, 168); 
-    background-image: linear-gradient(to bottom, #f1f1f163, #ffffffb0), url("../../images/socials/map2.jpg");
-    background-position: center;
-    background-size: 400px;
-    padding: 20px;
-    width: 570px;
+.recheck button{
+    margin-top: 170px;
+    margin-left: 5px;
+    padding: 10px 28px;
+    width: 275px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: rgb(236, 162, 23);
+    border-radius: 2px;
+}
+
+.recheck-active button{
+    margin-top: 170px;
+    margin-left: 2px;
+    padding: 10px 28px;
+    width: 540px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: rgb(236, 162, 23);
+    border-radius: 2px;
+}
+
+.button-holder{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#paymentPlatform .paymentCard{
+    background-color: white;
+    padding: 22px;
+    width: 580px;
+    /* height: 470px; */
     height: auto;
-    margin-top: -34%;
-    margin-left: 50%;
-    border-radius: 5px;
+    margin-top: -6.6%;
+    margin-left: 55%;
     box-shadow: 1px 22px 77px #777373ad;
 }
 
-.location-title{
-    color: #333333c5;
-    font-size: 30px;
-    font-weight: 200;
-    text-align: center;
+#titlePaymentPlatform{
+    color: #464646;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
-.state-input{
-    padding: 8px;
-    width: 70%;
-    font-size: 16px;
-    font-weight: 200;
-    text-align: center;
-    border-bottom: 1px solid rgba(54, 53, 53, 0.322);
-    border-top: 1px solid rgba(54, 53, 53, 0.322);
-    border-left: 1px solid rgba(54, 53, 53, 0.322);
-    border-right: 1px solid rgba(54, 53, 53, 0.322);
-    border-radius: 10px;
-    outline: none;
+#introToPaymentPlatforms{
+    color: #7a7a7a;
+    font-weight: 500;
+    font-size: 10px;
+    margin-top: 10px;
 }
 
-
-.town-input{
-    padding: 8px;
-    width: 70%;
-    font-size: 16px;
-    font-weight: 200;
-    text-align: center;
-    /* border-color: #7c7b7b33; */
-    border-bottom: 1px solid rgba(54, 53, 53, 0.322);
-    border-top: 1px solid rgba(54, 53, 53, 0.322);
-    border-left: 1px solid rgba(54, 53, 53, 0.322);
-    border-right: 1px solid rgba(54, 53, 53, 0.322);
-    border-radius: 10px;
-    outline: none;
-}
-
-.home-input{
-    padding: 8px;
-    width: 70%;
-    font-size: 15px;
-    font-weight: 200;
-    text-align: center;
-    /* border-color: #7c7b7b33; */
-    border-bottom: 1px solid rgba(54, 53, 53, 0.322);
-    border-top: 1px solid rgba(54, 53, 53, 0.322);
-    border-left: 1px solid rgba(54, 53, 53, 0.322);
-    border-right: 1px solid rgba(54, 53, 53, 0.322);
-    border-radius: 10px;
-    outline: none;  
-    margin-bottom: 20px;
-}
-
-#state{
-    color: #333333c5;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-
-#town{
-    color: #333333c5;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-
-#home-address{
-    color: #333333c5;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-
-.agree button{
+#bigPhoto{
+    cursor: pointer;
+    width: 270px;
+    margin-left: 110px;
     margin-top: 30px;
-    width: 520px;
+}
+
+#smallPhoto{
+    cursor: pointer;
+    width: 90px;
+    height: 50px;
+    border-radius: 100px;
+    margin-left: 18px;
+    transition: 0.5s;
+}
+
+#smallPhoto:hover{
+    transform: translateY(-5px);
+}
+
+#smallPhotowave{
+    cursor: pointer;
+    width: 90px;
+    height: 50px;
+    border-radius: 100px;
+    margin-left: 18px;
+    transition: 0.5s;
+}
+
+#smallPhotowave:hover{
+    transform: translateY(-5px);
+}
+
+#smallPhotoM{
+    cursor: pointer;
+    width: 90px;
+    height: 60px;
+    padding: 1px;
+    border-radius: 100px;
+    margin-top: -5px;
+    margin-right: -20px;
+    transition: 0.5s;
+}
+
+#smallPhotoM:hover{
+    transform: translateY(-5px);
+}
+
+#smallPhotopigy{
+    cursor: pointer;
+    width: 110px;
+    height: 60px;
+    border-radius: 100px;
+    margin-top: -5px;
+    margin-right: -3px;
+    transition: 0.5s;
+}
+
+#smallPhotopigy:hover{
+    transform: translateY(-5px);
+}
+
+.smallPicHolder{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.smallPicHoldermonie{
+    display: flex;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+.buttonForComfirmPayment{
+    margin-top: 50px;
     color: white;
     font-size: 15px;
     cursor: pointer;
@@ -243,6 +300,390 @@ hr{
     text-align: center;
     background-color: rgb(236, 162, 23);
     border-radius: 2px;
+}
+
+/* FeedBack */
+#requestPlatform .requestCard{
+    background-color: white;
+    padding: 22px;
+    width: 90%;
+    height: 540px;
+    margin-top: -7%;
+    margin-left: 6%;
+    border-radius: 20px;
+    box-shadow: 1px 22px 77px #777373ad;
+}
+
+.titleForRquest{
+    text-align: center;
+    max-width: 200;
+    margin-top: 12px;
+    font-size: 25px;
+    font-weight: 400;
+    /* color: #994f0a; */
+}
+
+.titleForRquest::before{
+    content: '';
+    background: #773d06;
+    height: 1.4px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+
+.titleForRquest::after{
+    content: '';
+    background: #773d06;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(29px);
+}
+
+#rating-container{
+    margin-left: 290px;
+    display: flex;
+}
+
+.rating-btn{
+    margin-top: 140px;
+    margin-left: 90px;
+    background: transparent;
+    border: none;
+}
+
+.rating-btn img{
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    display: block;
+    transition: 0.5s;
+}
+
+.rating-btn img:hover{
+    transform: translateY(-4px);
+}
+
+.unhappyRevButton{
+    cursor: pointer;
+    padding: 12px 40px;
+    width: 1000px;
+    margin-top: 120px;
+    margin-left: 100px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(236, 162, 23);
+    transition: 0.5s;
+}
+
+.unhappyRevButton:hover{
+    transform: translateY(-3px);
+}
+
+#unhappyReply .unhappyReplyCard{
+    background-color: white;
+    padding: 22px;
+    width: 90%;
+    height: 540px;
+    margin-top: -7%;
+    margin-left: 6%;
+    border-radius: 20px;
+    box-shadow: 1px 22px 77px #777373ad;
+}
+
+.titleForUnhappy::before{
+    content: '';
+    background: #773d06;
+    height: 1.4px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(53px);
+}
+
+.titleForUnhappy::after{
+    content: '';
+    background: #773d06;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(19px);
+}
+
+.titleForUnhappy{
+    text-align: center;
+    max-width: 200;
+    margin-top: 12px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.greetForUnhappy{
+    margin-top: 90px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+}
+
+.trackProblem{
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px; 
+}
+
+.findOutChallenge{
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: 1px; 
+    text-transform: uppercase;
+}
+
+.challengeOpt1{
+    color: #c08504;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 325px;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.challengeOpt1:hover{
+    color: #925b07;
+    letter-spacing: 3px;
+}
+
+.challengeOpt2{
+    color: #af7a06;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 325px;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.challengeOpt2:hover{
+    color: #925b07;
+    letter-spacing: 3px;
+}
+
+.apology{
+    margin-top: 150px;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.improvement{
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.acceptReplyBtn button{
+    cursor: pointer;
+    padding: 10px 40px;
+    width: 1000px;
+    margin-top: 120px;
+    margin-left: 100px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(236, 162, 23);
+    transition: 0.5s;
+}
+
+.acceptReplyBtn button a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.happyRevButton{
+    cursor: pointer;
+    padding: 12px 40px;
+    width: 1000px;
+    margin-top: 120px;
+    margin-left: 100px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(236, 162, 23);
+    transition: 0.5s;
+}
+
+.happyRevButton:hover{
+    transform: translateY(-3px);
+}
+
+#happyReply .happyReplyCard{
+    background-color: white;
+    padding: 22px;
+    width: 90%;
+    height: 540px;
+    margin-top: -7%;
+    margin-left: 6%;
+    border-radius: 20px;
+    box-shadow: 1px 22px 77px #777373ad;
+}
+
+.titleForHappy{
+    text-align: center;
+    max-width: 200;
+    margin-top: 12px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.titleForHappy::before{
+    content: '';
+    background: #773d06;
+    height: 1.4px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(53px);
+}
+
+.titleForHappy::after{
+    content: '';
+    background: #773d06;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(19px);
+}
+
+.greetingHappy{
+    margin-top: 120px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+}
+
+.happyResponse{
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px; 
+}
+
+.thanks-reply{
+    text-align: center;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.conclude-reply{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.neutralRevButton{
+    cursor: pointer;
+    padding: 12px 40px;
+    width: 1000px;
+    margin-top: 120px;
+    margin-left: 100px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(236, 162, 23);
+    transition: 0.5s;
+}
+
+#neutralReply .neutralReplyCard{
+    background-color: white;
+    padding: 22px;
+    width: 90%;
+    height: 540px;
+    margin-top: -7%;
+    margin-left: 6%;
+    border-radius: 20px;
+    box-shadow: 1px 22px 77px #777373ad;
+}
+
+.titleForNeutral{
+    text-align: center;
+    max-width: 200;
+    margin-top: 12px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.titleForNeutral::before{
+    content: '';
+    background: #773d06;
+    height: 1.4px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(53px);
+}
+
+.titleForNeutral::after{
+    content: '';
+    background: #773d06;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(20px);
+}
+
+.greetingNeutral{
+    margin-top: 120px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+}
+
+.trackNeutral{
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px; 
+}
+
+.neutralFinalResponse{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 200;
+    font-size: 18px;
 }
 
 /* body */
@@ -337,7 +778,8 @@ strong{
 }
 
 #plate-input{
-    color: #333;
+    color: #000000;
+    font-size: 15px;
     text-align: center;
     margin-left: 10px;
     padding: 10px 20px;
@@ -368,6 +810,7 @@ strong{
 }
 
 #time-input{
+    font-size: 16px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px 20px;

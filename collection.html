@@ -9,29 +9,38 @@
 </head>
 <body>
     <header>
-     <div class="navbar">
-        <div class="logo">
-            <h1>betaLife</h1>
-        </div>
+        <div class="navbar">
+            <div class="logo">
+                <h1>betaLife</h1>
+            </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Collection</a></li>
-            </ul>
-        </nav>
-    </div>   
-    </header><hr>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Collection</a></li>
+                </ul>
+            </nav>
 
-    <section>
-        <a href="" id="anchor"><img src="" id="large-image" class="large-image"></a>
-        <p id="name"></p>
-    </section>
+            <div id="navMessage"></div>
+            <div id="link1"></div>
+            <div id="link2"></div>
+            <div id="linkHolder"></div>
+            <div id="secondMenu"></div> 
+            <img src="images/emoji/menu.png" id="menu-btn" class="menu">
+            <a href="collection.html"><img src="images/emoji/delete.png" id="closeButton" class="delete"></a>
+        </div>   
+        <hr>
+
+        <section>
+            <a href="" id="anchor"><img src="" id="large-image" class="large-image"></a>
+            <p id="name"></p>
+        </section>
+    </header>   
 
     <div class="list-of-foods">
-        <p>Select meals</p>
         
         <div class="align-lists">
+            <p class="small-text">Select meals</p>
             <h5>Pasta</h5>
             <hr class="underline">
             <div class="group1">
@@ -96,7 +105,7 @@
             <div class="group1">
                 <div class="one">
                     <img src="images/local-foods/Jollof_Rice.jpg" onclick="setLargeImage(13)">
-                    <p class="food-name">Jollof Rice</p>
+                    <p class="food-name">jollof rice</p>
                 </div>
                 <div class="two">
                      <img src="images/local-foods/Yam-Porridge.jpg" onclick="setLargeImage(14)"> 
@@ -266,6 +275,7 @@
 
      
     </div>
+    
 
     <script src="collection.js"></script>
 </body>

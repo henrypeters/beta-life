@@ -96,7 +96,6 @@ function setCard() {
     button.style.display = "none"
 
     removeButton.addEventListener("click", removeFunc);
-    recheck.addEventListener("click", recheckFunction);
     moreInfo.addEventListener("click", continueFunction);
 }
 
@@ -601,48 +600,6 @@ function opayFunction() {
     showSmallPic4.addEventListener("click", moniepointFunction)
     showSmallPic5.addEventListener("click", opayFunction);
     confirmPaymentButton.addEventListener("click", requestFunction);
-}
-
-function recheckFunction() {
-    const notification = this.parentNode.parentNode;
-    const parent = notification.parentNode;
-
-    parent.removeChild(notification);
-
-    button.style.display = "block"
-    button.style.backgroundImage = "linear-gradient(to top, #bd7408, #f1ae1c)";
-    button.style.opacity = "1"
-
-    introPlate.style.display = "block"
-    introPlate.style.color = "black";
-    // 
-    introTime.style.display = "block"
-    introTime.style.color = "black";
-    // 
-    fixedName.style.color = "black"
-    // 
-    input1.style.display = "block"
-    input1.style.marginTop = "-29px"
-    input1.style.marginLeft = "93px"
-    input1.style.opacity = "1";
-    // 
-    input2.style.display = "block"
-    input2.style.opacity = "1";
-    // 
-    fixedImage.style.opacity = "1";
-    // 
-    body.style.backgroundColor = "#fff"
-    // 
-    foodName.style.display = "block"
-    foodName.style.color = "black"
-    // 
-    price.style.display = "block"
-    price.style.color = "rgb(100, 55, 19)"
-    // 
-    delivey.style.display = "block"
-    delivey.style.color = "rgb(100, 55, 19)"
-    // 
-    button.style.marginTop = "19px"
 }
 
 function removeFunc() {

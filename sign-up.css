@@ -44,6 +44,10 @@ nav ul li a:hover{
     color: black;
 }
 
+.menu{
+    display: none;
+}
+
 .logo h1{
     color: #000000;
     cursor: pointer;
@@ -52,12 +56,19 @@ nav ul li a:hover{
     margin-top: -10px;
     margin-bottom: -15px;
 }
+
+hr{
+    margin-left: 4%;
+    width: 90%;
+    margin-top: 10px;
+    border: 1px solid rgba(51, 51, 51, 0.123);
+}
  
 #form-card{
     width: 900px;
     height: auto;
     padding: 22px;
-    margin-top: 35px;
+    margin-top: 20px;
     margin-left: 200px;
     border-radius: 10px;
     background-color: #fff;
@@ -137,4 +148,188 @@ label {
 
 .secondBtn button:hover{
     letter-spacing: 1px;
+}
+
+@media (max-width: 991px) {
+    .navbar{
+        width: 10px;
+        height: 7vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .menu{
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        margin-left: 190px;
+        margin-top: 5px;
+        margin-bottom: -10px;
+    }
+
+    .close-btn{
+        display: block;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        opacity: 0.7;
+        margin-left: 190px;
+        margin-top: 5px;
+        margin-bottom: -10px;
+    }
+
+    .logo h1{
+        color: #000000;
+        cursor: pointer;
+        font-size: 35px;
+        margin-left: -200px;
+        margin-top: -2px;
+        margin-bottom: -15px;
+    }
+
+    hr{
+        margin-left: 12%;
+        width: 75%;
+        margin-top: 25px;
+        border: 1px solid rgba(73, 71, 71, 0.123);
+    }
+
+    #form-card{
+        width: 400px;
+        height: auto;
+        padding: 11px;
+        margin-top: 30px;
+        margin-left: 48px;
+        border-radius: 10px;
+        background-color: #fff;
+         box-shadow: 1px 20px  33px 20px rgba(209, 209, 209, 0.808);
+
+    }
+
+    .text-heading h2{
+        color: rgb(255, 125, 39);
+        font-size: 40px;
+        font-weight: 200;
+        padding-left: 80px;
+        letter-spacing: 2px;
+    }
+    
+    .form{
+        margin-left: 80px;
+    }
+    
+    .form input{
+        display: block;
+        font-size: 20px;
+        color: #333;
+        font-weight: 200;
+        margin-bottom: 20px;
+        border: 1px solid #E5E9F5;
+        background-color: #F6F7FA;
+        padding: 12px 20px;
+        margin-top: 10px;
+        border-radius: 10px;
+        outline: none;
+        width: 50%;
+    }
+    
+    ::placeholder {
+        color: #C0C7DB;
+        font-size: 15px;
+        letter-spacing: 1.2px;
+    }
+    
+    label {
+        color: #333;
+    }
+    
+    #firstBtn{
+        cursor: pointer;
+        color: #fff;
+        font-size: 17px;
+        padding: 12px 50px;
+        margin-top: 9px;
+        margin-bottom: 8px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(255, 145, 0);
+        transition: 0.5s;
+    }
+    
+    #firstBtn:hover{
+        letter-spacing: 1px;
+    }
+    
+    .secondBtn button{
+        cursor: pointer;
+        color: #fff;
+        font-size: 17px;
+        padding: 12px 50px;
+        margin-left: 80px;
+        margin-top: 9px;
+        margin-bottom: 8px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(255, 145, 0);
+        transition: 0.5s;
+    }
+    
+    .secondBtn button:hover{
+        letter-spacing: 1px;
+    }
+
+    .home-card{
+        min-height: 80vh;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #navMessage .navlist{
+        position: absolute;
+        width: 400px;
+        height: auto;
+        padding: 11px;
+        margin-left: -197px;
+        margin-top: 70px;
+        left: 0;
+        right: 0;
+        text-align: left;
+        border-radius: 5px;
+        background-color: #ff9100;
+    }
+
+    .linkTag{
+        display: block;
+        padding: 0.7em;
+        letter-spacing: 2px;
+        font-size: 15px;
+        margin-right: 15rem;
+        margin-top: 12px;
+        margin-bottom: 20px;
+        transition: all .40s;
+        text-decoration: none;
+        border-left: 2px solid #fff;  
+        color: #fff;
+    }
+
+    .linkTag:hover{
+        background: #fff;
+        width: 350px;
+        color: rgb(238, 136, 52);
+    }
+
+    .linkTag a::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -3px;
+        left: 0;
+        transition: ease .40s;
+    }
 }

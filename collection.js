@@ -1,3 +1,64 @@
+const header = document.querySelector("header");
+
+const menuButton = document.getElementById("menu-btn"); 
+const designLink1 = document.getElementById("link1");
+const designLink2 = document.getElementById("link2")
+const designLinkTag = document.getElementById("linkHolder");
+const designCloseButton = document.getElementById("closeButton");
+
+window.addEventListener ('scroll', function() {
+    header.classList.toggle ("sticky", window.scrollY > 0);
+});
+
+function addLinkMenu() {
+    const navigationMessage = document.querySelector("#navMessage");
+    const linkCard = document.createElement("div");
+    linkCard.classList.add("navlist");
+
+    largePictureHolder.style.display = "none";
+    header.style.height = "320px";
+
+    let link1 = `Home`;
+    let link2 = `Collection`;
+
+    designLink1.innerHTML = `<div><a href="index.html" class="linkTag">${link1}</a></div>`;
+    designLink2.innerHTML = `<div><a href="collection.html" class="linkTag">${link2}</a></div>`;
+
+    menuButton.style.display = "none";
+    designCloseButton.style.display = "block";
+
+    designLinkTag.appendChild(designLink1);
+    designLinkTag.appendChild(designLink2);
+    linkCard.appendChild(designLinkTag);
+    navigationMessage.appendChild(linkCard);
+}
+
+menuButton.addEventListener("click", addLinkMenu)
+
+// function addLinkMenu() {
+//     let link1 = `Home`;
+//     let link2 = `Collection`;
+
+//     designLinkTag.innerHTML = `<a href="index.html" class="linkTag">${link1}</a>
+//                             <a href="sign-up.html" class="linkTag">${link2}</a>`;
+
+//     linkCard.appendChild(designLinkTag);
+//     navigationMessage.appendChild(linkCard);
+
+//     largePictureHolder.style.display = "none";  
+
+//     toggleMenuImgToCloseImgFunction()
+// }
+
+// function toggleMenuImgToCloseImgFunction() {
+//     let closeButtonImg = `"images/emoji/delete.png"`;
+//     menuButton.style.display = "none"
+
+//     designCloseButton.innerHTML = `<a href="collection.html"><img src=${closeButtonImg} class="close-btn"></a>`;
+// }
+
+// menuButton.addEventListener("click", addLinkMenu);  
+
 const arrayOfPictures = ["images/choose-image.png", "images/pasta/spaghetti.jpg", "images/pasta/fusilli.webp", "images/pasta/ruote.jpg",
 "images/pasta/macaroni.jpg", "images/pasta/rigate.jpg", "images/pasta/Pappardelle.jpg", "images/pasta/orzo.jpg", "images/pasta/Indomie.jpg",
 "images/pasta/tagliatelle.jpg", "images/pasta/radiatore.jpg", "images/pasta/gnocchi.jpg", "images/pasta/penne1.jpg", 

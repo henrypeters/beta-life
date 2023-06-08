@@ -6,16 +6,18 @@ const button2 = document.getElementById("btn2");
 const foodName = document.getElementById("title");
 const price = document.getElementById("price");
 const delivey = document.getElementById("delivery");
-const priceLine = document.getElementById("linePrice");
-const plateLine = document.getElementById("linePlate");
 
 const menuBar = document.getElementById("menu-btn");
 const designLink1 = document.getElementById("link1");
-const designLink2 = document.getElementById("link2")
+const designLink2 = document.getElementById("link2");
 const designLinkTag = document.getElementById("linkHolder");
 const designCloseButton = document.getElementById("closeButton");
-const textBody = document.getElementById("text")
+const textBody = document.getElementById("text");
+const plateInputReadonly = document.getElementById("plates");
+const timeInputReadonly = document.getElementById("time");
 
+const listHolder = document.getElementById("li-holder")
+const menuHolder = document.getElementById("menuBarHolder");
 const designGreet = document.getElementById("designPlate");
 const designPlate = document.getElementById("correctPlate");
 const designTime = document.getElementById("designNotifyTime");
@@ -61,6 +63,11 @@ function addLinkMenu() {
     designCloseButton.style.display = "block";
     textBody.style.marginTop = "350px";
 
+    plateInputReadonly.innerHTML = `<strong id="plate-title">Plates:</strong> 
+                                    <input type="text" placeholder="number of plates" id="plate-input" readonly>`;
+    timeInputReadonly.innerHTML = `<h2 id="time-heading">Time to be delivered</h2>
+                                    <input type="time" id="time-input" readonly>`;
+
     designLinkTag.appendChild(designLink1);
     designLinkTag.appendChild(designLink2);
     linkCard.appendChild(designLinkTag);
@@ -104,6 +111,7 @@ function setCardMinimal() {
     
     removeButton.innerHTML = `<a href="spaghetti.html"><img src="../../images/socials/delete.png"></a>`;
     
+    menuHolder.innerHTML = `<img src="../../images/emoji/menu.png" class="inactiveMenu">`;
     designGreet.innerHTML = `<h3 class="greet"> ${greet} </h3>`;
     designPlate.innerHTML = `<h2> ${logicForNumPlate += plate} </h2>`;
     designTime.innerHTML = `<h3 class="designTime"> ${notifyTime} </h3>`;
@@ -137,8 +145,6 @@ function setCardMinimal() {
     foodName.style.display = "none";
     price.style.display = "none";
     delivey.style.display = "none";
-    // priceLine.style.opacity = "0.1";
-    // plateLine.style.opacity = "0.1";
     button2.style.display = "none"
 
     moreInfo.addEventListener("click", continueFunction);
@@ -168,6 +174,8 @@ function setCard() {
     
     removeButton.innerHTML = `<a href="spaghetti.html"><img src="../../images/socials/delete.png"></a>`;
     
+    listHolder.innerHTML = `<li><a class="readonlyLink">Home</a></li>
+                            <li><a class="readonlyLink">Collection</a></li>`;
     designGreet.innerHTML = `<h3 class="greet"> ${greet} </h3>`;
     designPlate.innerHTML = `<h2> ${logicForNumPlate += plate} </h2>`;
     designTime.innerHTML = `<h3 class="designTime"> ${notifyTime} </h3>`;
@@ -201,8 +209,6 @@ function setCard() {
     foodName.style.display = "none";
     price.style.display = "none";
     delivey.style.display = "none";
-    // priceLine.style.opacity = "0.1";
-    // plateLine.style.opacity = "0.1";
     button.style.display = "none"
 
     moreInfo.addEventListener("click", continueFunction);

@@ -15,7 +15,7 @@
         </div>
 
         <nav>
-            <ul>
+            <ul id="li-holder">
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="../../collection.html">Collection</a></li>
             </ul>
@@ -26,7 +26,10 @@
         <div id="link2"></div>
         <div id="linkHolder"></div>
         <div id="secondMenu"></div> 
-        <img src="../../images/emoji/menu.png" id="menu-btn" class="menu">
+
+        <div id="menuBarHolder">
+            <img src="../../images/emoji/menu.png" id="menu-btn" class="menu">
+        </div>
         <a href="spaghetti.html"><img src="../../images/emoji/delete.png" id="closeButton" class="delete"></a>
     </div>   
     </header><hr>
@@ -39,13 +42,13 @@
     <div class="text" id="text">
         <h1 id="title">Spaghetti</h1>
         <p id="price">Price: ₦450.00</p>
-        <p id="delivery">Delivery: ₦600.00</p><hr class="price-line" id="linePrice">  
+        <p id="delivery">Delivery: ₦600.00</p><hr class="price-line">  
 
-        <div class="plates">
+        <div class="plates" id="plates">
              <strong id="plate-title">Plates:</strong> <input type="text" placeholder="number of plates" id="plate-input">
-        </div><hr class="plate-line" id="linePlate">
+        </div><hr class="plate-line">
 
-        <div class="time">
+        <div class="time" id="time">
             <h2 id="time-heading">Time to be delivered</h2>
             <input type="time" id="time-input" onclick="">
         </div> 

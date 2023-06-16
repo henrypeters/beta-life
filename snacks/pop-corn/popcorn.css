@@ -8,7 +8,6 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-/* navbar */
 .logo{
     margin-top:20px;
     margin-left: 90px;
@@ -45,6 +44,14 @@ nav ul li a:hover{
     color: black;
 }
 
+.menu{
+    display: none;
+}
+
+.delete{
+    display: none;
+}
+
 hr{
     margin-left: 4%;
     width: 90%;
@@ -52,9 +59,18 @@ hr{
     border: 1px solid rgba(51, 51, 51, 0.123);
 }
 
-.text{
+#text{
     margin-top: 90px;
     margin-left: 710px;
+}
+
+#text h1{
+    /* margin-top: -30px;
+    margin-bottom: 40px;
+    margin-left: 120px;
+    letter-spacing: 1px;
+    font-weight: 500; */
+    display: none;
 }
 
 .text-box{
@@ -102,7 +118,6 @@ hr{
     background-color: rgb(238, 160, 15);
 }
 
-/* body */
 section{
     position: fixed;
     margin-left: 5%;
@@ -125,129 +140,238 @@ section{
     margin-top: 10px;
 }
 
-.name-line{
-    background-color: #33333396;
-    width: 100px;
-    margin-top: 10px;
-}
 
-#price{ 
-    color: rgb(100, 55, 19);
-    margin-top: 30px;
-    margin-left: -50px;
-    font-size: 25px;
-}
+@media (max-width: 800px) {
+    .navbar{
+        width: 10px;
+        height: 7vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
 
-#delivery{
-    color: rgb(100, 55, 19);
-    margin-top: 20px;
-    margin-left: -50px;
-    font-size: 25px;
-}
+    .menu{
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        margin-left: 265px;
+        margin-top: 23px;
+        margin-bottom: -10px;
+    }
 
-/* list */
-.text h1{
-    letter-spacing: 1px;
-    font-weight: 500;
-}
+    .inactiveMenu{
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: default;
+        opacity: 0.5;
+        margin-left: 265px;
+        margin-top: 23px;
+        margin-bottom: -10px;  
+    }
 
-.name-line{
-    background-color: #33333396;
-    width: 100px;
-    margin-top: 10px;
-}
+    .logo{
+        margin-top: 30px;
+        margin-left: -2px;
+        cursor: pointer;
+    }
 
-.price{
-    color: rgb(100, 55, 19);
-    margin-top: 30px;
-    margin-left: -50px;
-    font-size: 22px;
-}
+    #closeButton{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        opacity: 0.7;
+        margin-top: 36px;
+        margin-left: 265px;
+    }
 
-.delivery{
-    color: rgb(100, 55, 19);
-    margin-top: 15px;
-    margin-left: -50px;
-    font-size: 22px;
-}
+    header{
+        margin-top: -2px;
+        margin-left: -400px;
+    }
 
-.price-line{
-    width: 300px;
-    margin-bottom: 20px;
-    margin-left: -45px;
-}
+    nav{
+        display: none;
+    }
 
-/* plates */
-.plates{
-    margin-top: 20px;
-    margin-left: -50px;
-}
+    hr{
+        margin-left: 9.4%;
+        width: 80%;
+        margin-top: 30px;
+        border: 1px solid rgba(51, 51, 51, 0.123);
+    }
+    
+    #navMessage .navlist{
+        position: absolute;
+        width: 420px;
+        height: auto;
+        padding: 33px 16px;
+        margin-left: 30px;
+        margin-bottom: 90px;  
+        margin-top: 100px; 
+        left: 0;
+        right: 0;
+        text-align: left;
+        border-radius: 5px;
+        background-color: rgb(236, 162, 23);
+    }
 
-strong{
-    font-weight: 400;
-    font-size: 25px;
-}
+    .linkTag{
+        display: block;
+        cursor: pointer;
+        width: 90%;
+        padding: 0.7em;
+        letter-spacing: 2px;
+        font-size: 15px;
+        margin-right: 15rem;
+        margin-top: 12px;
+        margin-bottom: 20px;
+        color: #fff;
+        text-decoration: none;
+        transition: all .40s;
+        border-left: 2px solid #fff;  
+    }
 
-#plate-input{
-    color: #000000;
-    font-size: 15px;
-    text-align: center;
-    margin-left: 10px;
-    padding: 10px 20px;
-    outline: none;
-}
+    .linkTag:hover{
+        background: #fff;
+        width: 350px;
+        color: rgb(238, 136, 52);
+    }
 
-#num-plate{
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 20px;
-    margin-left: 140px;
-}
+    .linkTag a::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -3px;
+        left: 0;
+        transition: ease .40s;
+    }
 
-.plate-line{
-    width: 300px;
-    margin-bottom: 20px;
-    margin-left: -45px;
-}
+    section{
+        position: relative;
+        margin-left: 1.7%;
+        margin-top: 50px;
+        margin-right: 10%;
+    }
+    
+    .large-image{
+        width: 430px;
+        height: 290px;
+        margin: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
 
-/* Time to be delivered */
-.time{
-    margin-top: 20px;
-    margin-left: -50px;
-}
+    #name{
+        display: none;
+    }
+    
+    #text{
+        margin-top: 90px;
+        margin-bottom: 40px;
+        margin-left: 25px;
+    }
+    
+    #text h1{
+        display: block;
+        margin-top: 27%;
+        margin-left: 70px;
+        margin-bottom: 40px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
 
-.time h2{
-    font-weight: 500;
-}
+    .text-box{
+        width: 430px;
+        height: auto;
+        padding: 10px;
+        border: 1px solid #b3aaaa;
+    }
+    
+    .first-text{
+        font-size: 20px;
+        font-family: 500;
+        margin-top: 55px;
+        text-align: center;
+    }
+    
+    .second-text{
+        font-size: 15px;
+        font-weight: 200;
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .viewBtn{
+        margin-top: 80px;
+        margin-bottom: 15px;
+    }
+    
+    .viewBtn a{
+        text-decoration: none;
+    }
+    
+    .viewBtn a button{
+        color: #fff;
+        font-size: 17px;
+        width: 100%;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        background-color: rgb(252, 174, 30);
+        transition: 0.4s;
+    }
+    
+    .viewBtn a button:hover{
+        background-color: rgb(238, 160, 15);
+    }
+    
+    #navMessage .navlist{
+        position: absolute;
+        width: 420px;
+        height: auto;
+        padding: 33px 16px;
+        margin-left: 30px;
+        margin-bottom: 90px;  
+        margin-top: 100px; 
+        left: 0;
+        right: 0;
+        text-align: left;
+        border-radius: 5px;
+        background-color: rgb(236, 162, 23);
+    }
 
-#time-input{
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    outline: none;
-}
+    .linkTag{
+        display: block;
+        cursor: pointer;
+        width: 90%;
+        padding: 0.7em;
+        letter-spacing: 2px;
+        font-size: 15px;
+        margin-right: 15rem;
+        margin-top: 12px;
+        margin-bottom: 20px;
+        color: #fff;
+        text-decoration: none;
+        transition: all .40s;
+        border-left: 2px solid #fff;  
+    }
 
-/* Button */
-.order-button{
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
+    .linkTag:hover{
+        background: #fff;
+        width: 350px;
+        color: rgb(238, 136, 52);
+    }
 
-.order-button button{
-    cursor: pointer;
-    color: white;
-    letter-spacing: 2px;
-    font-size: 16px;
-    padding: 16px 50px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    box-shadow: 1px 10px 55px #dbc921;
-    background: linear-gradient(to top, #bd7408, #f1ae1c);
-}
-
-.order-button button:hover{
-    background: linear-gradient(to top , #d4840c, #f1ae1c);
+    .linkTag a::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -3px;
+        left: 0;
+        transition: ease .40s;
+    }
 }

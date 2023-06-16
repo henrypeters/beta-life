@@ -2,9 +2,22 @@ const body = document.getElementById("whole");
 const input1 = document.getElementById("plate-input");
 const input2 = document.getElementById("time-input")
 const button = document.getElementById("btn");
+const button2 = document.getElementById("btn2");
 const foodName = document.getElementById("title");
 const price = document.getElementById("price");
 const delivey = document.getElementById("delivery");
+
+const menuBar = document.getElementById("menu-btn");
+const designLink1 = document.getElementById("link1");
+const designLink2 = document.getElementById("link2");
+const designLinkTag = document.getElementById("linkHolder");
+const designCloseButton = document.getElementById("closeButton");
+const textBody = document.getElementById("text");
+const plateInputReadonly = document.getElementById("plates");
+const timeInputReadonly = document.getElementById("time");
+
+const listHolder = document.getElementById("li-holder")
+const menuHolder = document.getElementById("menuBarHolder");
 const designGreet = document.getElementById("designPlate");
 const designPlate = document.getElementById("correctPlate");
 const designTime = document.getElementById("designNotifyTime");
@@ -29,6 +42,44 @@ const fixedName = document.getElementById("name");
 const introPlate = document.getElementById("plate-title");
 const introTime = document.getElementById("time-heading");
 
+
+
+/////////////////////////////// 
+
+function addLinkMenu() {
+    const navigationMessage = document.querySelector("#navMessage");
+    const linkCard = document.createElement("div");
+    linkCard.classList.add("navlist");
+
+    fixedImage.style.display = "none";
+
+    let link1 = `Home`;
+    let link2 = `Collection`;
+
+    designLink1.innerHTML = `<div><a href="../../index.html" class="linkTag">${link1}</a></div>`;
+    designLink2.innerHTML = `<div><a href="../../collection.html" class="linkTag">${link2}</a></div>`;
+
+    menuBar.style.display = "none";
+    designCloseButton.style.display = "block";
+    textBody.style.marginTop = "350px";
+
+    plateInputReadonly.innerHTML = `<strong id="plate-title">Plates:</strong> 
+                                    <input type="text" placeholder="number of plates" id="plate-input" readonly>`;
+    timeInputReadonly.innerHTML = `<h2 id="time-heading">Time to be delivered</h2>
+                                    <input type="time" id="time-input" readonly>`;
+
+    designLinkTag.appendChild(designLink1);
+    designLinkTag.appendChild(designLink2);
+    linkCard.appendChild(designLinkTag);
+    navigationMessage.appendChild(linkCard);
+}
+
+menuBar.addEventListener("click", addLinkMenu)
+
+///////////////////////////////
+
+
+
 const moreInfo = document.createElement("div");
 moreInfo.classList.add("continue");
 moreInfo.innerHTML = `<h4> <button> Continue </button> </h4>`;
@@ -37,6 +88,67 @@ const recheck = document.createElement("div")
 recheck.classList.add("recheck");
 recheck.innerHTML = `<a href="iyan.html"><button> Recheck my order </button></a>`;
 
+function setCardMinimal() {
+    const message2 = document.querySelector("#minimalMessage");
+    const notification = document.createElement("div");
+    notification.classList.add("card");
+
+    let greet = `Dear Customer, you've just ordered`;
+    let plate = ` plate of iyan <hr class="notify-line">`;
+    let notifyTime = `It would be delivered at`;
+    let paymentText = ` Your payment is`
+    let paying = functionForPayment(Number.parseInt(input1.value, 10));
+    let logicForNumPlate = functionForNumberOfPlate(Number.parseInt(input1.value, 10));
+    let naira = `₦ `;
+
+    const actions  = document.createElement("div");
+    const btnHolder = document.createElement("div");
+    const removeButton = document.createElement("button");
+
+    actions.classList.add("actions");
+    btnHolder.classList.add("button-holder")
+    removeButton.classList.add("remove");
+    
+    removeButton.innerHTML = `<a href="iyan.html"><img src="../../images/socials/delete.png"></a>`;
+    
+    menuHolder.innerHTML = `<img src="../../images/emoji/menu.png" class="inactiveMenu">`;
+    designGreet.innerHTML = `<h3 class="greet"> ${greet} </h3>`;
+    designPlate.innerHTML = `<h2> ${logicForNumPlate += plate} </h2>`;
+    designTime.innerHTML = `<h3 class="designTime"> ${notifyTime} </h3>`;
+    displayTime.innerHTML = `<h2> ${input2.value} </h2> <hr class="notify-line">`;
+    desginPayment.innerHTML = `<h3 class="intro-amount"> ${paymentText} </h3>`;
+    displayPayment.innerHTML = `<h3 class="payConfirmation"> ${naira += paying} </h3>`
+
+    actions.appendChild(removeButton);
+    notification.appendChild(designGreet);
+    notification.appendChild(designPlate);
+    notification.appendChild(designTime);
+    notification.appendChild(displayTime);
+    notification.appendChild(desginPayment);
+    notification.appendChild(displayPayment);
+    notification.appendChild(actions);
+    btnHolder.appendChild(moreInfo);
+    btnHolder.appendChild(recheck);
+    notification.appendChild(btnHolder)
+    message2.appendChild(notification);
+    
+    input1.value = "";
+    input2.value = "";
+
+    introPlate.style.display = "none";
+    introTime.style.display = "none";
+    fixedName.style.color = "#47474771"
+    input1.style.display = "none";
+    input2.style.display = "none";
+    fixedImage.style.display = "none";
+    body.style.backgroundColor = "#adadad";
+    foodName.style.display = "none";
+    price.style.display = "none";
+    delivey.style.display = "none";
+    button2.style.display = "none"
+
+    moreInfo.addEventListener("click", continueFunction);
+}
 
 function setCard() {
     const message = document.querySelector("#message");
@@ -60,8 +172,10 @@ function setCard() {
     btnHolder.classList.add("button-holder")
     removeButton.classList.add("remove");
     
-    removeButton.innerHTML = `<img src="../../images/socials/delete.png">`;
+    removeButton.innerHTML = `<a href="iyan.html"><img src="../../images/socials/delete.png"></a>`;
     
+    listHolder.innerHTML = `<li><a class="readonlyLink">Home</a></li>
+                            <li><a class="readonlyLink">Collection</a></li>`;
     designGreet.innerHTML = `<h3 class="greet"> ${greet} </h3>`;
     designPlate.innerHTML = `<h2> ${logicForNumPlate += plate} </h2>`;
     designTime.innerHTML = `<h3 class="designTime"> ${notifyTime} </h3>`;
@@ -97,7 +211,6 @@ function setCard() {
     delivey.style.display = "none";
     button.style.display = "none"
 
-    removeButton.addEventListener("click", removeFunc);
     moreInfo.addEventListener("click", continueFunction);
 }
 
@@ -111,7 +224,7 @@ function functionForNumberOfPlate() {
 
 function functionForPayment(value) {
     if(input1.value > 0) {
-        return value*850+1000;
+        return value*(850+150);
     }else{ 
         moreInfo.style.display = "none";
         recheck.classList.toggle("recheck-active");
@@ -604,50 +717,6 @@ function opayFunction() {
     confirmPaymentButton.addEventListener("click", requestFunction);
 }
 
-function removeFunc() {
-    const notification = this.parentNode.parentNode;
-    const parent = notification.parentNode;
-
-    parent.removeChild(notification);
-
-    button.style.display = "block"
-    button.style.backgroundImage = "linear-gradient(to top, #bd7408, #f1ae1c)";
-    button.style.opacity = "1"
-
-    introPlate.style.display = "block"
-    introPlate.style.color = "black";
-    // 
-    introTime.style.display = "block"
-    introTime.style.color = "black";
-    // 
-    fixedName.style.color = "black"
-    // 
-    input1.style.display = "block"
-    input1.style.marginTop = "-29px"
-    input1.style.marginLeft = "93px"
-    input1.style.opacity = "1";
-    // 
-    input2.style.display = "block"
-    input2.style.opacity = "1";
-    // 
-    fixedImage.style.opacity = "1";
-    // 
-    body.style.backgroundColor = "#fff"
-    // 
-    foodName.style.display = "block"
-    foodName.style.color = "black"
-    // 
-    price.style.display = "block"
-    price.style.color = "rgb(100, 55, 19)"
-    // 
-    delivey.style.display = "block"
-    delivey.style.color = "rgb(100, 55, 19)"
-    // 
-    button.style.marginTop = "19px"
-}
-
-
-
 function setConditionForCard() {
     if (input1.value.length > 0 && input2.value.length > 0) {
         setCard();
@@ -661,4 +730,18 @@ function setConditionForCard() {
     input2.value = "";
 }
 
+function setConditionForMinimumCard() {
+    if (input1.value.length > 0 && input2.value.length > 0) {
+        setCardMinimal();
+    }else if (input2.value.length <= 0) {
+        alert("enter some values ...");
+    }else{
+        alert("please enter some values ...")
+    }
+
+    input1.value = "";
+    input2.value = "";
+}
+
 button.addEventListener("click", setConditionForCard)
+button2.addEventListener("click", setConditionForMinimumCard);

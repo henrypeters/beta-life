@@ -45,6 +45,27 @@ nav ul li a:hover{
     color: black;
 }
 
+.readonlyLink{
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 0.541);
+    transition: 0.2s;
+}
+
+.readonlyLink:hover{
+    cursor:default;
+    color: rgba(51, 51, 51, 0.541);
+}
+
+.menu{
+    display: none;
+}
+
+.delete{
+    display: none;
+}
+
 hr{
     margin-left: 4%;
     width: 90%;
@@ -194,7 +215,6 @@ hr{
     background-color: white;
     padding: 22px;
     width: 580px;
-    /* height: 470px; */
     height: auto;
     margin-top: -6.6%;
     margin-left: 55%;
@@ -839,4 +859,672 @@ strong{
 
 .order-button button:hover{
     background: linear-gradient(to top , #d4840c, #f1ae1c);
+}
+
+.order-button2{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .navbar{
+        width: 10px;
+        height: 7vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu{
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        margin-left: 265px;
+        margin-top: 23px;
+        margin-bottom: -10px;
+    }
+
+    .inactiveMenu{
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: default;
+        opacity: 0.5;
+        margin-left: 265px;
+        margin-top: 23px;
+        margin-bottom: -10px;  
+    }
+
+    .logo{
+        margin-top: 30px;
+        margin-left: -2px;
+        cursor: pointer;
+    }
+
+    #closeButton{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        opacity: 0.7;
+        margin-top: 36px;
+        margin-left: 265px;
+    }
+
+    header{
+        margin-top: -2px;
+        margin-left: -400px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    hr{
+        margin-left: 9.4%;
+        width: 80%;
+        margin-top: 30px;
+        border: 1px solid rgba(51, 51, 51, 0.123);
+    }
+    
+    #navMessage .navlist{
+        position: absolute;
+        width: 420px;
+        height: auto;
+        padding: 33px 16px;
+        margin-left: 30px;
+        margin-bottom: 90px;  
+        margin-top: 100px; 
+        left: 0;
+        right: 0;
+        text-align: left;
+        border-radius: 5px;
+        background-color: rgb(236, 162, 23);
+    }
+
+    .linkTag{
+        display: block;
+        cursor: pointer;
+        width: 90%;
+        padding: 0.7em;
+        letter-spacing: 2px;
+        font-size: 15px;
+        margin-right: 15rem;
+        margin-top: 12px;
+        margin-bottom: 20px;
+        color: #fff;
+        text-decoration: none;
+        transition: all .40s;
+        border-left: 2px solid #fff;  
+    }
+
+    .linkTag:hover{
+        background: #fff;
+        width: 350px;
+        color: rgb(238, 136, 52);
+    }
+
+    .linkTag a::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -3px;
+        left: 0;
+        transition: ease .40s;
+    }
+
+    section{
+        position: relative;
+        margin-left: 1.7%;
+        margin-top: 50px;
+        margin-right: 10%;
+    }
+    
+    .large-image{
+        width: 430px;
+        height: 290px;
+        margin: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    #name{
+        display: none;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    
+    .text{
+        margin-top: 100px;
+        margin-left: 90px;
+    }
+
+    .text h1{
+        letter-spacing: 1px;
+        font-weight: 500;
+        margin-top: -20px;
+        margin-left: 80px;
+        margin-bottom: 50px;
+    }
+
+    .price-line{
+        width: 300px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: -45px;
+    }
+
+    .plate-line{
+        width: 300px;
+        margin-bottom: 40px;
+        margin-left: -45px;
+    }
+
+    .order-button{
+        display: none;
+    }
+
+    .order-button2{
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: -55px;
+    }
+
+    .order-button2 button{
+        cursor: pointer;
+        color: white;
+        letter-spacing: 2px;
+        font-size: 16px;
+        padding: 16px 50px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        box-shadow: 1px 10px 55px #dbc921;
+        background: linear-gradient(to top, #bd7408, #f1ae1c);
+    }
+    
+    .order-button2 button:hover{
+        background: linear-gradient(to top , #d4840c, #f1ae1c);
+    }
+
+    #minimalMessage .card{
+        background: white;
+        padding: 18px;
+        width: 440px;
+        height: auto;
+        margin-top: -20%;
+        margin-left: 6%;
+        box-shadow: 1px 22px 77px #777373ad;
+    }
+
+    .continue button{
+        margin-top: 170px;
+        margin-bottom: -70px;
+        width: 200px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 10px 29px;
+        outline: none;
+        border: none;
+        text-align: center;
+        background-color: rgb(236, 162, 23);
+        border-radius: 2px;
+    }
+    
+    .recheck button{
+        margin-top: 170px;
+        margin-left: 5px;
+        padding: 10px 12px;
+        width: 200px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        text-align: center;
+        background-color: rgb(236, 162, 23);
+        border-radius: 2px;
+    }
+
+    #paymentPlatform .paymentCard{
+        background-color: white;
+        padding: 22px;
+        width: 450px;
+        height: auto;
+        margin-top: -22%;
+        margin-left: 5.5%;
+        box-shadow: 1px 22px 77px #777373ad;
+    }
+    
+    #titlePaymentPlatform{
+        color: #464646;
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    #introToPaymentPlatforms{
+        color: #7a7a7a;
+        font-weight: 500;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    
+    #bigPhoto{
+        cursor: pointer;
+        width: 270px;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    
+    #smallPhoto{
+        cursor: pointer;
+        width: 70px;
+        height: 50px;
+        border-radius: 100px;
+        margin-left: 18px;
+        transition: 0.5s;
+    }
+    
+    #smallPhoto:hover{
+        transform: translateY(-5px);
+    }
+    
+    #smallPhotowave{
+        cursor: pointer;
+        width: 70px;
+        height: 50px;
+        border-radius: 100px;
+        margin-left: 18px;
+        transition: 0.5s;
+    }
+    
+    #smallPhotowave:hover{
+        transform: translateY(-5px);
+    }
+    
+    #smallPhotoM{
+        cursor: pointer;
+        width: 80px;
+        height: 60px;
+        padding: 1px;
+        border-radius: 100px;
+        margin-top: -5px;
+        margin-right: -20px;
+        transition: 0.5s;
+    }
+    
+    #smallPhotoM:hover{
+        transform: translateY(-5px);
+    }
+    
+    #smallPhotopigy{
+        cursor: pointer;
+        width: 110px;
+        height: 60px;
+        border-radius: 100px;
+        margin-top: -5px;
+        margin-right: -3px;
+        transition: 0.5s;
+    }
+    
+    #smallPhotopigy:hover{
+        transform: translateY(-5px);
+    }
+    
+    .smallPicHolder{
+        display: flex;
+        margin-top: 20px;
+        margin-left: -15px;
+    }
+    
+    .smallPicHoldermonie{
+        display: flex;
+        margin-top: -5px;
+        margin-left: -15px;
+    }
+    
+    .buttonForComfirmPayment{
+        margin-top: 40px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 10px 20px;
+        outline: none;
+        border: none;
+        text-align: center;
+        background-color: rgb(236, 162, 23);
+        border-radius: 2px;
+    }
+
+    #requestPlatform .requestCard{
+        background-color: white;
+        padding: 22px;
+        width: 87%;
+        height: 520px;
+        margin-top: -30%;
+        margin-left: 6.5%;
+        border-radius: 10px;
+        box-shadow: 1px 22px 77px #777373ad;
+    }
+    
+    .titleForRquest{
+        text-align: center;
+        max-width: 200;
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .titleForRquest::before{
+        content: '';
+        background: #773d06;
+        height: 1px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transform: translateY(63px);
+    }
+    
+    .titleForRquest::after{
+        content: '';
+        background: #773d06;
+        height: 5px;
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transform: translateY(14px);
+    }
+    
+    #rating-container{
+        margin-top: 15px;
+        margin-left: 70px;
+        display: block;
+    }
+    
+    .rating-btn{
+        margin-top: 50px;
+        margin-left: 90px;
+        background: transparent;
+        border: none;
+    }
+    
+    .rating-btn img{
+        width: 65px;
+        height: 65px;
+        cursor: pointer;
+        display: block;
+        transition: 0.5s;
+    }
+    
+    .rating-btn img:hover{
+        transform: translateY(-4px);
+    }
+
+    #unhappyReply .unhappyReplyCard{
+        background-color: white;
+        padding: 22px;
+        width: 90%;
+        height: 470px;
+        margin-top: -25%;
+        margin-left: 6%;
+        border-radius: 10px;
+        box-shadow: 1px 22px 77px #777373ad;
+    }
+    
+    .titleForUnhappy::before{
+        content: '';
+        background: #773d06;
+        height: 1.4px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transform: translateY(61px);
+    }
+    
+    .titleForUnhappy::after{
+        content: '';
+        background: #773d06;
+        height: 5px;
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transform: translateY(12px);
+    }
+    
+    .titleForUnhappy{
+        text-align: center;
+        max-width: 200;
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .greetForUnhappy{
+        margin-top: 50px;
+        font-weight: 400;
+        text-align: center;
+        font-size: 17px;
+    }
+    
+    .trackProblem{
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px; 
+    }
+    
+    .findOutChallenge{
+        margin-top: 50px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 19px;
+        letter-spacing: 1px; 
+        text-transform: uppercase;
+    }
+    
+    .challengeOpt1{
+        color: #c08504;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 50px;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 2px;
+        transition: 0.3s;
+    }
+    
+    .challengeOpt1:hover{
+        color: #925b07;
+        letter-spacing: 3px;
+    }
+    
+    .challengeOpt2{
+        color: #af7a06;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 50px;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 2px;
+        transition: 0.3s;
+    }
+    
+    .challengeOpt2:hover{
+        color: #925b07;
+        letter-spacing: 3px;
+    }
+    
+    .apology{
+        margin-top: 100px;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .improvement{
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    .acceptReplyBtn button{
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        margin-top: 100px;
+        margin-left: -2px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 200;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: rgb(236, 162, 23);
+        transition: 0.5s;
+    }
+    
+    .acceptReplyBtn button a{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    #happyReply .happyReplyCard{
+        background-color: white;
+        padding: 22px;
+        width: 90%;
+        height: 470px;
+        margin-top: -25%;
+        margin-left: 6%;
+        border-radius: 10px;
+        box-shadow: 1px 22px 77px #777373ad;
+    }
+
+    .titleForHappy{
+        text-align: center;
+        max-width: 200;
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .titleForHappy::before{
+        content: '';
+        background: #773d06;
+        height: 1.4px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transform: translateY(61px);
+    }
+
+    .titleForHappy::after{
+        content: '';
+        background: #773d06;
+        height: 5px;
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transform: translateY(12px);
+    }
+
+    .greetingHappy{
+        margin-top: 80px;
+        font-weight: 400;
+        text-align: center;
+        font-size: 21px;
+    }
+
+    .happyResponse{
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px; 
+    }
+
+    .thanks-reply{
+        text-align: center;
+        margin-top: 8px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .conclude-reply{
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    #neutralReply .neutralReplyCard{
+        background-color: white;
+        padding: 22px;
+        width: 90%;
+        height: 470px;
+        margin-top: -25%;
+        margin-left: 6%;
+        border-radius: 10px;
+        box-shadow: 1px 22px 77px #777373ad;
+    }
+
+    .titleForNeutral{
+        text-align: center;
+        max-width: 200;
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .titleForNeutral::before{
+        content: '';
+        background: #773d06;
+        height: 1.4px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transform: translateY(61px);
+    }
+
+    .titleForNeutral::after{
+        content: '';
+        background: #773d06;
+        height: 5px;
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transform: translateY(12px);
+    }
+
+    .greetingNeutral{
+        margin-top: 90px;
+        font-weight: 400;
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .trackNeutral{
+        text-align: center;
+        font-weight: 400;
+        font-size: 15px; 
+    }
+
+    .neutralFinalResponse{
+        text-align: center;
+        margin-top: 15px;
+        font-weight: 200;
+        font-size: 16px;
+    }
 }
